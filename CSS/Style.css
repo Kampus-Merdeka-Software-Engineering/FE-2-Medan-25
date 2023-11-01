@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Padding kiri dan kanan */
+}
+
+.nav-background {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 10px; /* Jarak antara item menu */
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px; /* Padding untuk jarak di sekitar teks */
+}
+
+.search {
+  margin-right: 20px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  background-color: #333;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}
