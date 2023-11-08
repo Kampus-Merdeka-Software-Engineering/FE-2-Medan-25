@@ -1,70 +1,97 @@
-body{
-    margin: 0;
-}
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(48, 48, 48);
-    color: white;
-    padding: 5px;
-}
-nav a{
-    text-decoration: none;
-}
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
 
-.logo img{
-    border-radius: 50%;
-}
-
-.logo span{
-    margin-left: 10px;
-    color: white;
-}
-
-.navlist ul {
-    list-style-type: none;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-}
-.navlist ul li {
-    float: left;
-}
-.navlist ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
-.navlist ul li a:hover {
-    background-color: black;
+    box-sizing: border-box;
 }
 
-.search{
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
     display: flex;
-    padding: 10px
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.search input{
-    border: 0;
-    border-radius: 10px 0 0 10px;
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
-.search button{
-    color: white;
-    background-color: rgb(199, 122, 6);
-    border: 0;
-    border-radius: 0 10px 10px 0;
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
     padding: 10px;
+    
 }
-.search button:hover{
-    color: rgb(128, 126, 126);
-    background-color: rgb(235, 187, 115);
-    border: 1px;
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFA500; /* Ubah warna saat dihover */
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.menu-icon-x {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.bar {
+    height: 4px;
+    width: 25px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        transition: all 0.3s;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    
+    .menu-icon-x {
+        display: none;
+    }
 }
