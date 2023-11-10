@@ -11,11 +11,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* CSS NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
+    margin-bottom: 1px;
     padding: 10px 20px;
     color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -78,7 +80,7 @@ body {
         width: 100%;
         background-color: #333;
         position: absolute;
-        top: 70px;
+        top: 45px;
         left: 0;
         transition: all 0.3s;
     }
@@ -95,3 +97,58 @@ body {
         display: none;
     }
 }
+
+/* CSS NAVBAR END */
+
+/* CSS KATEGORI */
+.categories {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #333;
+    scrollbar-width: thin;
+}
+
+.categories a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.category {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.category:hover {
+    color: #FFA500; /* Ubah warna saat dihover */
+}
+
+    /* Style untuk box model */
+.box {
+padding-top: 200px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+background-size: cover;
+color: white;
+}
+.herojudul{
+bottom: 0;
+padding: 20px;
+}
+
+/* Style untuk judul */
+.judul {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+/* Style untuk cuplikan artikel */
+.cuplikan {
+font-size: 16px;
+color: #fff;
+}
+/*  */

@@ -1,31 +1,87 @@
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "hero hero hero terpopular"
-      "hero hero hero terpopular"
-      "Nesw Nesw Nesw terpopular"
-      "sport sport sport category"
-      "politik politik politik category"
-      "random random random random"
-      "footer footer footer footer";
-  }
-  
-  .hero { grid-area: hero; }
-  
-  .Nesw { grid-area: Nesw; }
-  
-  .sport { grid-area: sport; }
-  
-  .politik { grid-area: politik; }
-  
-  .terpopular { grid-area: terpopular; }
-  
-  .category { grid-area: category; }
-  
-  .random { grid-area: random; }
-  
-  .footer { grid-area: footer; }
-  
+main {
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "hero hero hero terpopular"
+    "hero hero hero terpopular"
+    "Nesw Nesw Nesw terpopular"
+    "sport sport sport category"
+    "politik politik politik category"
+    "random random random random"
+    "footer footer footer footer";
+}
+
+
+.hero {
+  grid-area: hero;
+  padding: 50px;
+
+}
+
+/* Style untuk box model */
+.box {
+  padding-top: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  color: white;
+}
+
+.herojudul {
+  bottom: 0;
+  padding: 20px;
+}
+
+/* Style untuk judul */
+.judul {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style untuk cuplikan artikel */
+.cuplikan {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* end hero */
+
+
+.Nesw {
+  grid-area: Nesw;
+}
+
+.sport {
+  grid-area: sport;
+}
+
+.politik {
+  grid-area: politik;
+}
+
+.terpopular {
+  grid-area: terpopular;
+  padding-top: 50px;
+}
+
+.category {
+  grid-area: category;
+}
+
+.random {
+  grid-area: random;
+}
+
+.footer {
+  grid-area: footer;
+}
