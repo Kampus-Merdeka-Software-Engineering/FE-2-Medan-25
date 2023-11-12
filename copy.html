@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+    
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+    
+        .main-column {
+            width: 70%;
+        }
+    
+        .sidebar-column {
+            width: 25%;
+            background-color: #eee;
+            padding: 15px;
+        }
+    
+        /* Add your own styles for news articles and other elements */
+    
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            .container {
+                display: block;
+            }
+
+            .main-column,
+            .sidebar-column {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+    </head>
+    <body>
+    <header>
+        <h1>Website Berita</h1>
+    </header>
+    
+    <div class="container">
+        <div class="main-column">
+            <h2>Berita Utama</h2>
+            <!-- Tempatkan berita utama di sini -->
+            <article>
+                <h3>Judul Berita Utama</h3>
+                <p>Isi berita utama...</p>
+            </article>
+        </div>
+    
+        <div class="sidebar-column">
+            <h2>Terpopuler</h2>
+            <!-- Tempatkan berita terpopuler di sini -->
+            <ul>
+                <li><a href="#">Judul Berita Terpopuler 1</a></li>
+                <li><a href="#">Judul Berita Terpopuler 2</a></li>
+                <li><a href="#">Judul Berita Terpopuler 3</a></li>
+                <!-- Tambahkan lebih banyak berita terpopuler jika diperlukan -->
+            </ul>
+        </div>
+    </div>
+    </body>
+</html>

@@ -7,24 +7,86 @@
     <title>news</title>
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/news.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+    
+        .main-column {
+            width: 70%;
+            text-align: center; 
+            padding-top: 200px;    
+            padding-bottom: 20px;
+            border-radius: 10px;
+            background: repeat;
+            background-size: cover;
+            background-position: center;
+        }
 
+        .main-column a{
+            text-decoration: none;
+            color: white;
+        }
+    
+        .sidebar-column {
+            width: 25%;
+            background-color: #eee;
+            padding: 15px;  
+            border-radius: 5px;      
+
+        }
+
+        .sidebar-column a{
+            text-decoration: none;
+            color: black;       
+        }
+    
+        /* Add your own styles for news articles and other elements */
+    
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            .container {
+                display: block;
+            }
+
+            .main-column,
+            .sidebar-column {
+                width: 100%;
+                float: none;
+            }
+        }
     </style>
 
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">News</div>
+        <nav class="navbar">                
+                <a href="" class="logo"><img src="/asset/images/logo.jpg" style="width: 40px; border-radius: 50%; margin-right: 5px;" alt=""><span>News</span></a>            
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
+                <form action="/cc.html">
+                    <input type="text" class="search" placeholder="search" style="width: 200px; height: 30px; border-radius: 50px 0 0 50px; padding: 10px; border: 0;"><button type="submit" style="width: 30px; height: 30px; border-radius: 0 50px 50px 0; border: 0; color: rgb(0, 0, 0); background-color: white;"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
             </ul>
             <div class="menu-icon">
                 <i class="fa-solid fa-bars-staggered"></i>
@@ -57,48 +119,121 @@
     </header>
     <main>
         <div class="container">
-            <div class="hero">
-                <!-- Box Model -->
-                <div class="box"
-                    style="background-image: url('https://dentmasoci.com/storage/2017/09/rose-201pixabay.jpg');">
-                    <div class="herojudul">
-                        <!-- Judul -->
-                        <div class="judul">Judul Artikel</div>
-
-                        <!-- Cuplikan Artikel -->
-                        <div class="cuplikan">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris...
-                        </div>
-
-                    </div>
-                </div>
+            <div class="main-column" style="background-image: url('/asset/images/Prabowo.jpg');">
+                <a href="#" alt="">
+                    <h2 style="padding-bottom: 5px;">Berita Utama</h2>
+                    <!-- Tempatkan berita utama di sini -->
+                    <article>
+                        <h3>PRABOWO DAN GIBRAN 2024</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate maxime magni explicabo in, nostrum incidunt ut dignissimos dolorem voluptatibus tempora veritatis, aliquid nulla ducimus nemo magnam autem repellat aperiam perferendis!</p>
+                    </article>
+                </a>
+            </div>            
+        
+            <div class="sidebar-column">
+                <h2>Terpopuler</h2>
+                <hr>
+                <!-- Tempatkan berita terpopuler di sini -->
+                <table style="padding-top: 10px;">
+                    <tr>
+                        <td>
+                            <img style="width: 70px;" src="/asset/images/logo.jpg" alt="">
+                        </td>
+                        <td style="display: block; align-items: start; padding-left: 5px; font-size: 15px;">
+                            <a style="align-items: start; font-weight: bold;" href="#">Logo BJIR group 25 Revou</a>
+                            <p style="color: #808080;" >20 april 2020</p>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td>
+                            <img style="width: 70px;" src="/asset/images/logo.jpg" alt="">
+                        </td>
+                        <td style="display: block; align-items: start; padding-left: 5px; font-size: 15px;">
+                            <a style="align-items: start; font-weight: bold;" href="#">Logo BJIR group 25 Revou</a>
+                            <p style="color: #808080;" >20 april 2020</p>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td>
+                            <img style="width: 70px;" src="/asset/images/logo.jpg" alt="">
+                        </td>
+                        <td style="display: block; align-items: start; padding-left: 5px; font-size: 15px;">
+                            <a style="align-items: start; font-weight: bold;" href="#">Logo BJIR group 25 Revou</a>
+                            <p style="color: #808080;" >20 april 2020</p>
+                        </td>
+                    </tr>                    
+                </table>
             </div>
-            <div class="Nesw">1</div>
-            <div class="sport">2</div>
-            <div class="politik">3</div>
-            <div class="terpopular">
-                <div class="box"
-                    style="background-image: url('https://dentmasoci.com/storage/2017/09/rose-201pixabay.jpg');">
-                    <div class="herojudul">
-                        <!-- Judul -->
-                        <div class="judul">Judul Artikel</div>
-
-                        <!-- Cuplikan Artikel -->
-                        <div class="cuplikan">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris...
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="category">5</div>
-            <div class="random">6</div>
-            <div class="footer">7</div>
         </div>
+        <section class="Africanews">
+            <h3 id="media__title2">Africa News</h3>
+            <div class="news_media_group">
+              <div id="nm1" class="nm">
+                <img
+                  class="nmimage"
+                  src="/asset/images/logod.jpg"
+                  width="260px"
+                  height="150px"
+                  alt="picture"
+                />
+                <h3 class="nmtopic">G7 to agree tough measures on burning coal</h3>
+                <p class="nmsummary">
+                  It comes as Sir David Attenborough warns humans may be about to
+                  destabilise the entire planet.
+                </p>
+                <p class="nmmenulink">UK POLITICS</p>
+              </div>
+              <div id="nm2" class="nm">
+                <img
+                  class="nmimage"
+                  src="/asset/images/logod.jpg"
+                  width="260px"
+                  height="150px"
+                  alt="picture"
+                />
+                <h3 class="nmtopic">
+                  China to G7: Small groups do not rule the world
+                </h3>
+                <p class="nmsummary">
+                  The G7 leaders, who are meeting in England, have sought a unified
+                  position over China's rise.
+                </p>
+                <p class="nmmenulink">CHINA</p>
+              </div>
+              <div id="nm3" class="nm">
+                <img
+                  class="nmimage"
+                  src="/asset/images/logod.jpg"
+                  width="260px"
+                  height="150px"
+                  alt="picture"
+                />
+                <h3 class="nmtopic">Eriksen 'awake' after collapsing</h3>
+                <p class="nmsummary">
+                  Denmark midfielder Christian Eriksen is "awake" in hospital after
+                  collapsing during the Euro 2020 match against Finland, say the
+                  Danish Football Association.
+                </p>
+                <p class="nmmenulink">FOOTBALL</p>
+              </div>
+              <div id="nm3" class="nm">
+                <img
+                  class="nmimage"
+                  src="/asset/images/logod.jpg"
+                  width="260px"
+                  height="150px"
+                  alt="picture"
+                />
+                <h3 class="nmtopic">Eriksen 'awake' after collapsing</h3>
+                <p class="nmsummary">
+                  Denmark midfielder Christian Eriksen is "awake" in hospital after
+                  collapsing during the Euro 2020 match against Finland, say the
+                  Danish Football Association.
+                </p>
+                <p class="nmmenulink">FOOTBALL</p>
+              </div>
+            </div>
+          </section>
     </main>
     <script src="/js/navbar.js"></script>
 </body>

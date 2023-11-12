@@ -1,0 +1,66 @@
+.Africanews {
+    margin: 5rem 50px 5rem 50px;
+  }
+  
+  .Africanews #media__title2 {
+    border-left: 4px solid yellow;
+    padding-left: 5px;
+    font-size: 1.5rem;
+  }
+  
+  .Africanews img {
+    width: 100%;
+    object-fit: fill;
+    margin: 0rem;
+  }
+  @media screen and (max-width: 1024px) {
+    .Africanews {
+      margin: 5rem 10px 5rem 10px;
+    }
+  }
+  .Africanews #media__title2 {
+    border-left: 4px solid yellow;
+    padding-left: 5px;
+    font-size: 1.5rem;
+  }
+  .news_media_group {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nm1to9 {
+    width: 77%;
+  }
+  
+  .news_media_group #nm2,
+  .news_media_group #nm3 {
+    margin-left: 15px;
+  }
+  .morearoundbbc .nm1to9 {
+    margin-left: 15px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .editorspicks .nm1to9 {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+  }
+  .nm .nmimage {
+    width: 100%;
+  }
+  .nm1to9 {
+    width: 77%;
+  }
+  
+  .news_media_group #nm2,
+  .news_media_group #nm3 {
+    margin-left: 15px;
+  }
+  .nm .nmimage {
+    width: 100%;
+  }
+  .nmmenulink {
+    border-left: 3px solid red;
+    padding-left: 5px;
+  }
