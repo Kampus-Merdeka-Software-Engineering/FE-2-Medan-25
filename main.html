@@ -1,117 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/main copy.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="navbar">
-        <a href="" class="logo"
-          ><img
-            src="/asset/images/logo.jpg"
-            style="width: 40px; border-radius: 50%; margin-right: 5px"
-            alt=""
-          /><span>News</span></a
-        >
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <form action="/cc.html">
-            <input
-              type="text"
-              class="search-form"
-              placeholder="search"
-            /><button
-              type="submit"
-              class="search-button"
-            >
-        </ul>
-        <div class="menu-icon">
-          <i class="fa-solid fa-bars-staggered"></i>
-        </div>
-        <div class="menu-icon-x">
-          <i class="fa-solid fa-x"></i>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="/css/main copy.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <a href="" class="logo"><img src="/asset/images/logo.jpg"
+          style="width: 40px; border-radius: 50%; margin-right: 5px" alt="" /><span>News</span></a>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <form action="/cc.html">
+          <input type="text" class="search-form" placeholder="search" /><button type="submit" class="search-button">
+      </ul>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars-staggered"></i>
       </div>
-      <div class="content">
-        <h1>Judul Berita</h1>
-        <img class="newsimage" src="/images/author1.jpg" alt="" />
-        <p>Keterangan gambar atau deskripsi singkat tentang gambar berita.</p>
-        <p>Isi deskripsi konten berita secara lengkap...</p>
+      <div class="menu-icon-x">
+        <i class="fa-solid fa-x"></i>
       </div>
-      <div class="kategory">
-        <div class="sidebar-column">
-          <h2>Terpopuler</h2>
-          <hr />
-          <!-- Tempatkan berita terpopuler di sini -->
-          <table style="padding-top: 10px">
-            <tr>
-              <td>
-                <img style="width: 70px" src="/asset/images/logo.jpg" alt="" />
-              </td>
-              <td
-                style="
-                  display: block;
-                  align-items: start;
-                  padding-left: 5px;
-                  font-size: 15px;
-                "
-              >
-                <a style="align-items: start; font-weight: bold" href="#"
-                  >Logo BJIR group 25 Revou</a
-                >
-                <p style="color: #808080">20 april 2020</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img style="width: 70px" src="/asset/images/logo.jpg" alt="" />
-              </td>
-              <td
-                style="
-                  display: block;
-                  align-items: start;
-                  padding-left: 5px;
-                  font-size: 15px;
-                "
-              >
-                <a style="align-items: start; font-weight: bold" href="#"
-                  >Logo BJIR group 25 Revou</a
-                >
-                <p style="color: #808080">20 april 2020</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img style="width: 70px" src="/asset/images/logo.jpg" alt="" />
-              </td>
-              <td
-                style="
-                  display: block;
-                  align-items: start;
-                  padding-left: 5px;
-                  font-size: 15px;
-                "
-              >
-                <a style="align-items: start; font-weight: bold" href="#"
-                  >Logo BJIR group 25 Revou</a
-                >
-                <p style="color: #808080">20 april 2020</p>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="footer"></div>
     </div>
-    <script src="navbar.js"></script>
-  </body>
+    <div class="content">
+       <h2>Judul Artikel</h2>
+      <p>Tanggal: <time datetime="2023-11-16">16 November 2023</time></p>
+      <img src="gambar-artikel.jpg" alt="Gambar Artikel">
+      <p>Deskripsi singkat artikel. Ini adalah tempat untuk konten artikel berita.</p>
+      <p>Isi artikel yang lebih panjang...</p>
+    </div>
+    <div class="kategory">
+      <div class="sidebar-column">
+        <h2>Terpopuler</h2>
+        <hr />
+        <!-- Tempatkan berita terpopuler di sini -->
+        <table style="padding-top: 10px">
+          <tr>
+            <td>
+              <img style="width: 70px" src="/asset/images/logo.jpg" alt="" />
+            </td>
+            <td class="popu">
+              <a style="align-items: start; font-weight: bold" href="#">Logo BJIR group 25 Revou</a>
+              <p >20 april 2020</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img style="width: 70px" src="/asset/images/logo.jpg" alt="" />
+            </td>
+            <td class="popu">
+              <a style="align-items: start; font-weight: bold" href="#">Logo BJIR group 25 Revou</a>
+              <p >20 april 2020</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img style="width: 70px" src="/asset/images/logo.jpg" alt="" />
+            </td>
+            <td class="popu">
+              <a style="align-items: start; font-weight: bold" href="#">Logo BJIR group 25 Revou</a>
+              <p >20 april 2020</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </div>
+  <script src="navbar.js"></script>
+</body>
 </html>
-  
