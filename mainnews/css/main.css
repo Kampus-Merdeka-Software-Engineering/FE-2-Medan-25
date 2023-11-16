@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  grid-template-rows: 0.2fr 1.8fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navbar navbar"
+    "content kategory"
+    "footer footer";
+}
+
+.navbar {
+  grid-area: navbar;
+}
+/* CSS NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191d88;
+  margin-bottom: 1px;
+  padding: 10px 20px;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.logo:hover {
+  color: #ffa500; /* Ubah warna saat dihover */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffa500; /* Ubah warna saat dihover */
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.menu-icon-x {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.bar {
+  height: 4px;
+  width: 25px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+/* form seacrh */
+
+.search-form {
+  width: 200px;
+  height: 30px;
+  border-radius: 50px 0 0 50px;
+  padding: 10px;
+  border: 0;
+  margin-top: 5px;
+}
+
+.search-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 0 50px 50px 0;
+  border: 0;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: 11px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    transition: all 0.3s;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon-x {
+    display: none;
+  }
+}
+
+/* CSS NAVBAR END */
+
+.footer {
+  grid-area: footer;
+}
+
+.content {
+  grid-area: content;
+}
+
+.kategory {
+  grid-area: kategory;
+}
