@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/home/main.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="navbar">
+          <a href="" class="logo"
+            ><img
+              src="/asset/images/logo.jpg"
+              style="width: 40px; border-radius: 50%; margin-right: 5px"
+              alt=""
+            /><span>News</span></a
+          >
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <form action="/cc.html">
+              <input
+                type="text"
+                class="search-form"
+                placeholder="search"
+              /><button type="submit" class="search-button"></button>
+            </form>
+            <div class="menu-icon">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+            <div class="menu-icon-x">
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </ul>
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const menuIconX = document.querySelector(".menu-icon-x");
+            const navLinks = document.querySelector(".nav-links");
+
+            // Sembunyikan menu-icon-x saat halaman dimuat
+            menuIconX.style.display = "none";
+
+            menuIcon.addEventListener("click", () => {
+              navLinks.classList.toggle("active");
+              menuIcon.style.display = "none";
+              menuIconX.style.display = "block";
+            });
+
+            menuIconX.addEventListener("click", () => {
+              navLinks.classList.toggle("active");
+              menuIcon.style.display = "block";
+              menuIconX.style.display = "none";
+            });
+          });
+        </script>
+      </div>
+      <div class="carousel" style="background-color: rgb(161, 127, 255)">
+        ini konten berita bergerak
+      </div>
+      <div class="content" style="background-color: rgb(229, 255, 127)">
+        ini isi konten
+        <div class="sidebar" style="background-color: aquamarine">side bar</div>
+        <div class="politik" style="background-color: aquamarine">
+          ini politik
+        </div>
+        <div class="olahraga" style="background-color: aquamarine">
+          ini olahraga
+        </div>
+        <div class="rekomendasi" style="background-color: aquamarine">
+          ini rekomendasi
+        </div>
+        <div class="hiburan" style="background-color: aquamarine">
+          ini hiburan
+        </div>
+        <div class="vidio" style="background-color: aquamarine">ini vidio</div>
+      </div>
+      <div class="footer" style="background-color: rgb(255, 172, 127)">
+        ini footer
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.querySelector(".menu-icon");
+        const menuIconX = document.querySelector(".menu-icon-x");
+        const navLinks = document.querySelector(".nav-links");
+
+        // Sembunyikan menu-icon-x saat halaman dimuat
+        menuIconX.style.display = "none";
+
+        menuIcon.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          menuIcon.style.display = "none";
+          menuIconX.style.display = "block";
+        });
+
+        menuIconX.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          menuIcon.style.display = "block";
+          menuIconX.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>
