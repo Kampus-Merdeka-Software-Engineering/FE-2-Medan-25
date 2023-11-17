@@ -1,0 +1,178 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* CSS NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191d88;
+  margin-bottom: 1px;
+  padding: 10px 20px;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.logo:hover {
+  color: #ffa500; /* Ubah warna saat dihover */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffa500; /* Ubah warna saat dihover */
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.menu-icon-x {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.bar {
+  height: 4px;
+  width: 25px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    transition: all 0.3s;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon-x {
+    display: none;
+  }
+}
+
+/* CSS NAVBAR END */
+
+/* CSS KATEGORI */
+.categories {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #1450a3;
+  scrollbar-width: thin;
+}
+
+.categories a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.category {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.category:hover {
+  color: #ffa500; /* Ubah warna saat dihover */
+}
+/*  */
+.hero-section {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section {
+    display: block;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.carau {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden; /* Mengatur overflow untuk efek geser */
+}
+
+#headline-container {
+  display: flex;
+  animation: slide 10s linear infinite; /* Animasi geser ke samping */
+}
+
+#headline {
+  font-size: 24px;
+  margin: 0;
+  padding-right: 20px; /* Jarak antar headline */
+  white-space: nowrap; /* Mencegah wrap ke baris baru */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  } /* Menggeser headline ke kiri */
+}

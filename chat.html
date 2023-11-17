@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carousel Gambar</title>
+    <style>
+      .carousel {
+        position: relative;
+        max-width: 800px;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      .carousel-images {
+        display: flex;
+      }
+
+      .carousel-images img {
+        width: 100%;
+        display: none;
+      }
+
+      .carousel-images img:first-child {
+        display: block;
+      }
+
+      button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 2;
+      }
+
+      .prev {
+        left: 0;
+      }
+
+      .next {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="/asset/images/logo.jpg" alt="Gambar 1" />
+        <img src="/asset/images/Prabowo.jpg" alt="Gambar 2" />
+        <img src="/asset/images/logod.jpg" alt="Gambar 3" />
+      </div>
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides(slideIndex);
+
+      function changeSlide(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function showSlides(n) {
+        const slides = document
+          .getElementsByClassName("carousel-images")[0]
+          .getElementsByTagName("img");
+
+        if (n >= slides.length) {
+          slideIndex = 0;
+        } else if (n < 0) {
+          slideIndex = slides.length - 1;
+        }
+
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slides[slideIndex].style.display = "block";
+      }
+
+      // Fungsi untuk mengubah slide otomatis setiap 3 detik
+      setInterval(() => {
+        changeSlide(1);
+      }, 4000);
+    </script>
+  </body>
+</html>
