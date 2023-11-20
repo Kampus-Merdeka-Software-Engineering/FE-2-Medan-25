@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/*contact us*/
+.contactUs {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 800px;
+  max-width: 800px;
+  background: #ffffff;
+  padding: 25px 40px 10px 40px;
+  border-radius: 5px;
+  border-color: #025465e0;
+  box-shadow: 0 0 10px rgb(82, 74, 66);
+}
+
+.container .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #df6819e0;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.container form {
+  padding: 30px 0 0 0;
+}
+
+.container form .form-row {
+  display: flex;
+  margin: 32px 0;
+}
+
+.container form .form-row .input-data {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.container form .form-row .input-data.textarea {
+  height: 70px;
+}
+
+.container form .form-row .input-data input,
+.container form .form-row .input-data textarea {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid #025465e0;
+}
+
+.container form .form-row .input-data textarea {
+  resize: none;
+  padding-top: 10px;
+}
+
+.container form .form-row .input-data label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.container form .form-row .input-data input:focus ~ label,
+.container form .form-row .input-data textarea:focus ~ label,
+.container form .form-row .input-data input:valid ~ label,
+.container form .form-row .input-data textarea:valid ~ label {
+  transform: translateY(-30px);
+  font-size: 14px;
+  color: #df6819e0;
+}
+
+.container form .form-row .input-data.textarea label {
+  width: 100%;
+  bottom: 40px;
+  background: #ffffff;
+}
+
+.container form .form-row .input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.container form .form-row .input-data .underline::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #025465e0;
+  transform-origin: center;
+  transition: all 0.3s ease;
+  transform: scaleX(0);
+}
+
+.container form .form-row .input-data input:focus ~ .underline::before,
+.container form .form-row .input-data textarea:focus ~ .underline::before,
+.container form .form-row .input-data input:valid ~ .underline::before,
+.container form .form-row .input-data textarea:valid ~ .underline::before {
+  transform: scale(1);
+}
+
+.container form .form-row.submit-btn {
+  justify-content: center; /* Memposisikan tombol di tengah */
+  margin-top: 32px;
+}
+
+.container form .form-row.submit-btn .input-data {
+  overflow: hidden;
+  height: 45px !important;
+  width: 25% !important;
+  border-radius: 25px; /* Menambahkan sudut melengkung yang sama */
+}
+
+.container form .form-row.submit-btn .input-data .inner {
+  height: 100%;
+  width: 300%;
+  background: #f26727;
+  position: absolute;
+}
+
+.container form .form-row.submit-btn .input-data:hover .inner {
+  left: 0;
+}
+
+.container form .form-row.submit-btn .input-data input {
+  z-index: 2;
+  position: relative;
+  background: none;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+@media (max-width: 1024px) {
+    .container .title {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .container .title {
+      font-size: 25px;
+    }
+  
+    .container form .form-row {
+      flex-direction: column;
+    }
+    
+    .container form .form-row .input-data {
+      flex: 100%;
+      margin: 15px 0;
+    }
+  
+    .container form .form-row.submit-btn .input-data {
+      width: 50% !important;
+    }
+  }

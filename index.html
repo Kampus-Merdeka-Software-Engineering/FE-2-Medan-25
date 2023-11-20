@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/asset/css/style.css" />
+    <title>CeplosNews</title>
+    <link rel="icon" type="image/x-icon" href="/asset/images/logo.ico" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo"
+          ><img
+            src="/asset/images/logo.jpeg"
+            style="width: 40px; border-radius: 50%; margin-right: 5px"
+            alt=""
+          /><span>CeplosNews</span></a
+        >
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/src/about.html">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="/src/contact.html">Contact</a></li>
+          <form class="search" action="/cc.html">
+            <input
+              type="text"
+              class="search"
+              placeholder="search"
+              style="
+                width: 200px;
+                height: 30px;
+                border-radius: 50px 0 0 50px;
+                padding: 10px;
+                border: 0;
+              "
+            /><button
+              type="submit"
+              style="
+                width: 30px;
+                height: 30px;
+                border-radius: 0 50px 50px 0;
+                border: 0;
+                color: rgb(0, 0, 0);
+                background-color: white;
+              "
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <li>
+            <a href="/src/login.html"
+              ><i class="fa-solid fa-user" style="color: #ffffff"></i> Login</a
+            >
+          </li>
+        </ul>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+        <div class="menu-icon-x">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </nav>
+      <div class="kategori">
+        <div class="kategori-scroll">
+          <div class="categories" id="kategoriContainer">
+            <!-- Kategori akan diisi melalui JavaScript -->
+            <!-- Periksa js categories -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Carousel -->
+    <div class="header-container">
+      <div class="carousel-container">
+        <div class="carousel-wrapper">
+          <div class="slide">
+            <img src="/html.webp" alt="Slide 1" />
+            <div class="dark-overlay"></div>
+            <div class="slide-content">
+              <h2>
+                <a href="#"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elr</a
+                >
+              </h2>
+              <blockquote>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+                explicabo numquam, sapiente illum exercitationem
+              </blockquote>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="/css.jpg" alt="Slide 2" />
+            <div class="dark-overlay"></div>
+            <div class="slide-content">
+              <h2>
+                <a href="#"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elr</a
+                >
+              </h2>
+              <blockquote>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+                explicabo numquam, sapiente illum exercitationem
+              </blockquote>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="/html.webp" alt="Slide 3" />
+            <div class="dark-overlay"></div>
+            <div class="slide-content">
+              <h2>
+                <a href="#"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elr</a
+                >
+              </h2>
+              <blockquote>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+                explicabo numquam, sapiente illum exercitationem
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+        <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+      </div>
+
+      <div class="card-header-container">
+        <div class="card-header">
+          <img src="/html.webp" alt="" />
+          <div class="card-header-text">
+            <h3><a href="#">Card kotak</a></h3>
+            <p>Content for Card-header 1 goes here.</p>
+          </div>
+        </div>
+        <div class="card-header">
+          <img src="/css.jpg" alt="" />
+          <div class="card-header-text">
+            <h3><a href="#">Card kotak</a></h3>
+            <p>Content for Card-header 1 goes here.</p>
+          </div>
+        </div>
+        <div class="card-header">
+          <img src="/css.jpg" alt="" />
+          <div class="card-header-text">
+            <h3><a href="#">Card kotak</a></h3>
+            <p>Content for Card-header 1 goes here.</p>
+          </div>
+        </div>
+        <div class="card-header">
+          <img src="/html.webp" alt="" />
+          <div class="card-header-text">
+            <h3><a href="#">Card kotak</a></h3>
+            <p>Content for Card-header 1 goes here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Carousel -->
+
+    <!-- Content 1 start -->
+    <div class="isicontent">
+      <!-- Isi Content -->
+      <div class="content1">
+        <!-- Content Politik -->
+        <h3 class="judul-kategori">
+          <i class="fa-solid fa-circle" style="color: #ca2121"></i> Politic
+        </h3>
+        <hr />
+        <div class="politik">
+          <div class="card">
+            <img src="/html.webp" alt="Card Image 1" />
+            <div class="card-content">
+              <h3><a href="/src/detail.html">Jdul content satu</a></h3>
+              <p>
+                This is a sample card description. You can add more details
+                here.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/html.webp" alt="Card Image 2" />
+            <div class="card-content">
+              <h3><a href="#">Jdul content satu</a></h3>
+              <p>
+                This is a sample card description. You can add more details
+                here.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/html.webp" alt="Card Image 3" />
+            <div class="card-content">
+              <h3><a href="#">Jdul content satu</a></h3>
+              <p>
+                This is a sample card description. You can add more details
+                here.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Sport  -->
+        <h3 class="judul-kategori">
+          <i class="fa-solid fa-circle" style="color: #ca2121"></i> Sport
+        </h3>
+        <hr />
+        <div class="sport">
+          <div class="card">
+            <img src="/html.webp" alt="Card Image 1" />
+            <div class="card-content">
+              <h3><a href="#">Jdul content satu</a></h3>
+              <p>
+                This is a sample card description. You can add more details
+                here.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/html.webp" alt="Card Image 2" />
+            <div class="card-content">
+              <h3><a href="#">Jdul content satu</a></h3>
+              <p>
+                This is a sample card description. You can add more details
+                here.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/html.webp" alt="Card Image 3" />
+            <div class="card-content">
+              <h3><a href="#">Jdul content satu</a></h3>
+              <p>
+                This is a sample card description. You can add more details
+                here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <h3 class="judul-popular">
+          <i class="fa-solid fa-circle" style="color: #ffdb29"></i> Terpopular
+        </h3>
+        <div class="popular">
+          <div class="card-mini">
+            <img src="/css.jpg" alt="Card Image 1" />
+            <div class="card-mini-content">
+              <h3><a href="#">Judul side bar</a></h3>
+              <p>Date: November 16, 2023</p>
+            </div>
+          </div>
+
+          <div class="card-mini">
+            <img src="/css.jpg" alt="Card Image 1" />
+            <div class="card-mini-content">
+              <h3><a href="#">Judul side bar</a></h3>
+              <p>Date: November 16, 2023</p>
+            </div>
+          </div>
+
+          <div class="card-mini">
+            <img src="/css.jpg" alt="Card Image 2" />
+            <div class="card-mini-content">
+              <h3><a href="#">Judul side bar</a></h3>
+              <p>Date: November 16, 2023</p>
+            </div>
+          </div>
+
+          <div class="card-mini">
+            <img src="/css.jpg" alt="Card Image 3" />
+            <div class="card-mini-content">
+              <h3><a href="#">Judul side bar</a></h3>
+              <p>Date: November 16, 2023</p>
+            </div>
+          </div>
+
+          <div class="card-mini">
+            <img src="/css.jpg" alt="Card Image 4" />
+            <div class="card-mini-content">
+              <h3><a href="#">Judul side bar</a></h3>
+              <p>Date: November 16, 2023</p>
+            </div>
+          </div>
+
+          <div class="card-mini">
+            <img src="/css.jpg" alt="Card Image 5" />
+            <div class="card-mini-content">
+              <h3><a href="#">Judul side bar</a></h3>
+              <p>Date: November 16, 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content 1 end -->
+    <!-- Rels -->
+    <div class="rels-container">
+      <p class="kategori-rels">RELS</p>
+      <span class="span-rels">The most amazing videos from the CeplosNews</span>
+      <div class="rels">
+        <div class="rels-card">
+          <img width="200px" src="/html.webp" alt="Earth Image 3" />
+          <div class="rels-content">
+            <h5><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+          </div>
+        </div>
+
+        <div class="rels-card">
+          <img width="200px" src="/html.webp" alt="rels Image 3" />
+          <div class="rels-content">
+            <h5><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+          </div>
+        </div>
+
+        <div class="rels-card">
+          <img width="200px" src="/html.webp" alt="rels Image 3" />
+          <div class="rels-content">
+            <h5><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Earth -->
+    <div class="content2">
+      <h3 class="judul-kategori">
+        <i class="fa-solid fa-circle" style="color: #ca2121"></i> Earth
+      </h3>
+      <hr />
+      <div class="Earth-container">
+        <div class="Earth">
+          <img src="/css.jpg" alt="Earth Image 1" />
+          <div class="Earth-content">
+            <h3><a href="#">Judul Earth</a></h3>
+            <p>
+              This is a sample Earth description. You can add more details here.
+            </p>
+          </div>
+        </div>
+
+        <div class="Earth">
+          <img src="/css.jpg" alt="Earth Image 2" />
+          <div class="Earth-content">
+            <h3><a href="#">Judul Earth</a></h3>
+            <p>
+              This is a sample Earth description. You can add more details here.
+            </p>
+          </div>
+        </div>
+
+        <div class="Earth">
+          <img src="/css.jpg" alt="Earth Image 3" />
+          <div class="Earth-content">
+            <h3><a href="#">Judul Earth</a></h3>
+            <p>
+              This is a sample Earth description. You can add more details here.
+            </p>
+          </div>
+        </div>
+
+        <div class="Earth">
+          <img src="/css.jpg" alt="Earth Image 3" />
+          <div class="Earth-content">
+            <h3><a href="#">Judul Earth</a></h3>
+            <p>
+              This is a sample Earth description. You can add more details here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content3 start -->
+    <div class="content-bottom">
+      <!-- asidebar-hiburan -->
+      <div class="asidebar-hiburan">
+        <h3 class="judul-hiburan">
+          <i class="fa-solid fa-circle" style="color: #ffdb29"></i> Hiburan
+        </h3>
+        <div class="hiburan">
+          <div class="card-hiburan">
+            <img src="/css.jpg" alt="Card Image 1" />
+            <div class="card-hiburan-content">
+              <h3><a href="#">Judulll</a></h3>
+              <p>Date: November 16, 2023</p>
+            </div>
+          </div>
+
+          <div class="card-hiburan">
+            <img src="/css.jpg" alt="Card Image 1" />
+            <div class="card-hiburan-content">
+              <h3><a href="#">Judulll</a></h3>
+              <p>Date: November 16, 2023</p>
+            </div>
+          </div>
+
+          <div class="card-hiburan">
+            <img src="/css.jpg" alt="Card Image 2" />
+            <div class="card-hiburan-content">
+              <h3><a href="#">Judulll</a></h3>
+              <p>Date: November 16, 2023</p>
+            </div>
+          </div>
+
+          <div class="card-hiburan">
+            <img src="/css.jpg" alt="Card Image 3" />
+            <div class="card-hiburan-content">
+              <h3><a href="#">Judulll</a></h3>
+              <p>Date: November 16, 2023</p>
+            </div>
+          </div>
+
+          <div class="card-hiburan">
+            <img src="/css.jpg" alt="Card Image 4" />
+            <div class="card-hiburan-content">
+              <h3><a href="#">Judulll</a></h3>
+              <p>Date: November 16, 2023</p>
+            </div>
+          </div>
+
+          <div class="card-hiburan">
+            <img src="/css.jpg" alt="Card Image 5" />
+            <div class="card-hiburan-content">
+              <h3><a href="#">Judulll</a></h3>
+              <p>Date: November 16, 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--end side bar  -->
+      <div class="content3">
+        <!-- Content3 -->
+        <h3 class="judul-ekonomi">
+          <i class="fa-solid fa-circle" style="color: #ca2121"></i> Ekonomi
+        </h3>
+        <hr />
+        <div class="card-header-ekonomi">
+          <img src="/css.jpg" alt="" />
+          <div class="card-overlay">
+            <div class="content-card">
+              <h3><a href="">Judul</a></h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Architecto, dicta.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container-ekonomi">
+          <div class="card-ekonomi">
+            <img src="/html.webp" alt="Card Image 1" />
+            <div class="card-content-ekonomi">
+              <h3><a href="#">Juduull</a></h3>
+              <p>
+                This is a sample card description. You can add more details
+                here.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-ekonomi">
+            <img src="/html.webp" alt="Card Image 2" />
+            <div class="card-content-ekonomi">
+              <h3><a href="#">Juduull</a></h3>
+              <p>
+                This is a sample card description. You can add more details
+                here.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-ekonomi">
+            <img src="/html.webp" alt="Card Image 3" />
+            <div class="card-content-ekonomi">
+              <h3><a href="#">Juduull</a></h3>
+              <p>
+                This is a sample card description. You can add more details
+                here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content3 -->
+    <!-- Footer -->
+    <footer>
+      <h2 style="margin-top: 20px">CeplosNews</h2>
+      <div class="footer-row">
+        <div class="column">
+          <h3>Column 1</h3>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Column 2</h3>
+          <ul>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Column 3</h3>
+          <ul>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="margin-top: 10px; text-align: center">
+        &copy;Copyright © CeplosNews
+      </p>
+    </footer>
+
+    <script src="/asset/js/carousel.js"></script>
+    <script src="/asset/js/navbar.js"></script>
+    <script src="/asset/js/categories.js"></script>
+  </body>
+</html>
