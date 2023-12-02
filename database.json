@@ -1,0 +1,237 @@
+
+{
+    "data": [
+      {
+        "datatime": "2023-11-29 20:06:12",
+        "title": "politik 1",
+        "gambar": "https://i.dailymail.co.uk/i/pix/2011/03/11/article-1365318-0D925D90000005DC-780_964x593.jpg",
+        "kategori": "Politik",
+        "deskripsi": "Deskripsi untuk politik 1."
+      },
+      {
+        "datatime": "2023-11-29 21:30:45",
+        "title": "politik 2",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Politik",
+        "deskripsi": "Deskripsi untuk politik 2."
+      },
+      {
+        "datatime": "2023-11-29 22:45:30",
+        "title": "politik 3",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Politik",
+        "deskripsi": "Deskripsi untuk berita 3."
+      },
+      {
+        "datatime": "2023-11-30 09:45:00",
+        "title": "olahraga 4",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Olahraga",
+        "deskripsi": "Deskripsi untuk olahraga 4."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "olahraga 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Olahraga",
+        "deskripsi": "Deskripsi untuk olahraga 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "olahraga 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Olahraga",
+        "deskripsi": "Deskripsi untuk berita 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "popoloar 5",
+        "gambar": "https://source.unsplash.com/100x100",
+        "kategori": "Popular",
+        "deskripsi": "Deskripsi untuk popoloar 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "popoloar 5",
+        "gambar": "https://source.unsplash.com/100x100",
+        "kategori": "Popular",
+        "deskripsi": "Deskripsi untuk popoloar 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "popoloar 5",
+        "gambar": "https://source.unsplash.com/100x100",
+        "kategori": "Popular",
+        "deskripsi": "Deskripsi untuk popoloar 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "popoloar 5",
+        "gambar": "https://source.unsplash.com/100x100",
+        "kategori": "Popular",
+        "deskripsi": "Deskripsi untuk popoloar 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "popoloar 5",
+        "gambar": "https://source.unsplash.com/100x100",
+        "kategori": "Popular",
+        "deskripsi": "Deskripsi untuk popoloar 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "popoloar 5",
+        "gambar": "https://source.unsplash.com/100x100",
+        "kategori": "Popular",
+        "deskripsi": "Deskripsi untuk berita 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "rels 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "rels",
+        "deskripsi": "Deskripsi untuk rels 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "rels 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "rels",
+        "deskripsi": "Deskripsi untuk rels 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "rels 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "rels",
+        "deskripsi": "Deskripsi untuk berita 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "earth 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Earth",
+        "deskripsi": "Deskripsi untuk earth 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "earth 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Earth",
+        "deskripsi": "Deskripsi untuk earth 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "earth 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Earth",
+        "deskripsi": "Deskripsi untuk earth 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "earth 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Earth",
+        "deskripsi": "Deskripsi untuk berita 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "hibbuu 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Hiburan",
+        "deskripsi": "Deskripsi untuk hibbuu 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "hibbuu 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Hiburan",
+        "deskripsi": "Deskripsi untuk hibbuu 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "hibbuu 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Hiburan",
+        "deskripsi": "Deskripsi untuk hibbuu 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "hibbuu 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Hiburan",
+        "deskripsi": "Deskripsi untuk hibbuu 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "hibbuu 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Hiburan",
+        "deskripsi": "Deskripsi untuk hibbuu 5."
+      },
+      {
+        "datatime": "2023-11-30 11:00:45",
+        "title": "hibbuu 5",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Hiburan",
+        "deskripsi": "Deskripsi untuk berita 5."
+      },
+      {
+        "datatime": "2023-11-30 12:15:30",
+        "title": "head ekom 6",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Ekonomi",
+        "deskripsi": "Deskripsi untuk berita 6."
+      },
+      {
+        "datatime": "2023-11-30 12:15:30",
+        "title": "ekonomi 6",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Ekonomi",
+        "deskripsi": "Deskripsi untuk ekonomi 6."
+      },
+      {
+        "datatime": "2023-11-30 12:15:30",
+        "title": "ekonomi 6",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Ekonomi",
+        "deskripsi": "Deskripsi untuk ekonomi 6."
+      },
+      {
+        "datatime": "2023-11-30 12:15:30",
+        "title": "ekonomi 6",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Ekonomi",
+        "deskripsi": "Deskripsi untuk ekonomi 6."
+      },
+      {
+        "datatime": "2023-11-30 12:15:30",
+        "title": "kesehatan 6",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Kesehatan",
+        "deskripsi": "Deskripsi untuk ekonomi 6."
+      },
+      {
+        "datatime": "2023-11-30 12:15:30",
+        "title": "teknologi 6",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Teknologi",
+        "deskripsi": "Deskripsi untuk ekonomi 6."
+      },
+      {
+        "datatime": "2023-11-30 12:15:30",
+        "title": "Berita 6",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Teknologi",
+        "deskripsi": "Deskripsi untuk berita 6."
+      },
+      {
+        "datatime": "2023-11-30 12:15:30",
+        "title": "Berita 6",
+        "gambar": "https://source.unsplash.com/500x400",
+        "kategori": "Kesehatan",
+        "deskripsi": "Deskripsi untuk berita 6."
+      }
+    ]
+  }
+  

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Your existing head content -->
+</head>
+
+<body>
+    <header>
+        <!-- Your existing header content -->
+    </header>
+
+
+    <main>
+        <div class="detail-container">
+            <!-- Isi Content -->
+            <div class="detail-isi">
+                <!-- Content isi-detail -->
+                <h1 class="judul-detail" id="detailTitle">Loading...</h1>
+                <div class="isi-detail">
+
+                    <div class="card-detail">
+                        <img id="detailImage" alt="Card-isi-detail Image">
+                        <div class="card-detail-content">
+                            <h3 id="detailCategory">Category</h3>
+                            <p id="detailTime">Time</p>
+                            <p id="detailDescription">Description</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('id');
+            
+            fetch('https://kind-plum-wasp-wrap.cyclic.app/artikel')
+                .then(response => response.json())
+                .then(data => {
+                    
+                    const detailItem = data.data.find(item => item.id === parseInt(id));
+
+                    if (detailItem) {
+                        document.getElementById('detailTitle').textContent = detailItem.title;
+                        document.getElementById('detailCategory').textContent = detailItem.kategori;
+                        document.getElementById('detailTime').textContent = detailItem.time;
+                        document.getElementById('detailDescription').textContent = detailItem.deskripsi;
+                        
+                        const detailImage = document.getElementById('detailImage');
+                        detailImage.src = detailItem.gambar;
+                        detailImage.alt = `Card-isi-detail Image: ${detailItem.title}`;
+                    } else {
+                        
+                        console.error('Item not found');
+                    }
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        });
+    </script>
+</body>
+
+</html>
