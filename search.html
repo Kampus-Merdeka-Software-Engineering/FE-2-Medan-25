@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Card-search Layout</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <h3 class="label-search">Search Results</h3>
+
+    <div class="container-search" id="search-container">
+        <!-- Hasil pencarian akan ditampilkan di sini -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mendapatkan elemen untuk menampilkan hasil pencarian
+            let searchContainer = document.getElementById('search-container');
+
+            // Mendapatkan kata kunci pencarian dari URL
+            let searchParams = new URLSearchParams(window.location.search);
+            let searchTerm = searchParams.get('q');
+
+            // Memeriksa apakah parameter pencarian ada
+            if (searchTerm !== null) {
+                // Mengambil data dari file JSON menggunakan fetch
+                fetch('/database.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        // Menyaring data berdasarkan judul atau deskripsi yang cocok dengan kata kunci pencarian
+                        let searchResults = data.data.filter(item =>
+                            item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                            item.deskripsi.toLowerCase().includes(searchTerm.toLowerCase())
+                        );
+
+                        // Menampilkan hasil pencarian di halaman web
+                        displaySearchResults(searchResults, searchContainer);
+                    })
+                    .catch(error => console.error('Error fetching data:', error));
+            } else {
+                // Tampilkan pesan bahwa tidak ada kata kunci pencarian
+                searchContainer.innerHTML = '<p>No search term provided</p>';
+            }
+
+            // Fungsi untuk menampilkan hasil pencarian di halaman web
+            function displaySearchResults(results, container) {
+                // Mengosongkan kontainer sebelum menambahkan hasil pencarian baru
+                container.innerHTML = '';
+
+                // Loop untuk setiap hasil pencarian
+                results.forEach(function (item) {
+                    // Membuat elemen card-search untuk setiap hasil pencarian
+                    let cardElement = document.createElement('div');
+                    cardElement.classList.add('card-search');
+
+                    let imgElement = document.createElement('img');
+                    imgElement.src = item.gambar;
+                    imgElement.alt = item.title;
+
+                    let titleElement = document.createElement('h3');
+                    let titleLink = document.createElement('a');
+                    titleLink.href = 'link/ke/halaman-detail.html'; // Atur href sesuai kebutuhan
+                    titleLink.textContent = item.title;
+                    titleElement.appendChild(titleLink);
+
+                    let descElement = document.createElement('p');
+                    descElement.textContent = item.deskripsi;
+
+                    // Menambahkan elemen ke dalam card-search
+                    cardElement.appendChild(imgElement);
+                    cardElement.appendChild(titleElement);
+                    cardElement.appendChild(descElement);
+
+                    // Menambahkan elemen card-search ke dalam container
+                    container.appendChild(cardElement);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
+<!-- 
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Card-search Layout</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <h3 class="label-search">Kategori - (kata kunci yang dicari)</h3>
+
+    <div class="container-search" id="search-container">
+        <div class="card-search">
+            <img src="item dari gambar" alt=" ">
+            <h3><a href="#">title</a></h3>
+            <p>deskripsi</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+ -->
