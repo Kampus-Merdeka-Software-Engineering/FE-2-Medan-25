@@ -176,6 +176,7 @@ body {
     height: auto;
     max-width: 100%;
     position: relative;
+    object-fit: cover;
 }
 
 .dark-overlay {
@@ -695,7 +696,7 @@ body {
     justify-content: space-between;
 }
 
-.card-header-ekonomi {
+.card-head-ekonomi .card-header-ekonomi {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -708,7 +709,7 @@ body {
 }
 
 
-.card-header-ekonomi img {
+.card-head-ekonomi .card-header-ekonomi img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -730,18 +731,18 @@ body {
     z-index: 2;
 }
 
-.card-header-ekonomi .content-card {
+.card-head-ekonomi .card-header-ekonomi .content-card {
     bottom: 20%;
     z-index: 2;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-.card-header-ekonomi h3 {
+.card-head-ekonomi .card-header-ekonomi h3 {
     margin-bottom: 10px;
 }
 
-.card-header-ekonomi a {
-    color: white;
+.card-head-ekonomi .card-header-ekonomi a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 

@@ -2,14 +2,19 @@
 <html lang="en">
 
 <head>
-    <!-- Your existing head content -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
 </head>
 
 <body>
     <header>
         <!-- Your existing header content -->
     </header>
-
 
     <main>
         <div class="detail-container">
@@ -23,7 +28,7 @@
                         <img id="detailImage" alt="Card-isi-detail Image">
                         <div class="card-detail-content">
                             <h3 id="detailCategory">Category</h3>
-                            <p id="detailTime">Time</p>
+                            <h3 id="detailDatetime">Datetime</h3>
                             <p id="detailDescription">Description</p>
                         </div>
                     </div>
@@ -33,30 +38,36 @@
 
         </div>
     </main>
-
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            
             const urlParams = new URLSearchParams(window.location.search);
             const id = urlParams.get('id');
-            
-            fetch('https://kind-plum-wasp-wrap.cyclic.app/artikel')
+
+            fetch('database.json')
                 .then(response => response.json())
                 .then(data => {
-                    
                     const detailItem = data.data.find(item => item.id === parseInt(id));
 
                     if (detailItem) {
                         document.getElementById('detailTitle').textContent = detailItem.title;
-                        document.getElementById('detailCategory').textContent = detailItem.kategori;
-                        document.getElementById('detailTime').textContent = detailItem.time;
-                        document.getElementById('detailDescription').textContent = detailItem.deskripsi;
-                        
+
                         const detailImage = document.getElementById('detailImage');
                         detailImage.src = detailItem.gambar;
                         detailImage.alt = `Card-isi-detail Image: ${detailItem.title}`;
+
+                        // Adding the additional detail elements
+                        const isiDetail = document.querySelector('.isi-detail');
+                        isiDetail.innerHTML = `
+                            <div class="card-detail">
+                                <img src="${detailItem.gambar}" alt="Card-isi-detail Image 1">
+                                <div class="card-detail-content">
+                                    <h5>${detailItem.datatime}</h5>
+                                    <h3>${detailItem.kategori}</h3>
+                                    <p>${detailItem.deskripsi}</p>
+                                </div>
+                            </div>
+                        `;
                     } else {
-                        
                         console.error('Item not found');
                     }
                 })
