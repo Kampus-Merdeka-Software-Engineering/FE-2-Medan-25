@@ -3,7 +3,7 @@ fetch('database.json')
     .then(response => response.json())
     .then(data => {
         // Rels section
-        const relsData = data.data.filter(item => item.kategori === 'rels');
+        const relsData = data.data.filter(item => item.kategori === 'Rels');
         const relsContainer = document.getElementById('rels-container');
 
         relsData.forEach(item => {

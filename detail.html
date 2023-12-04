@@ -13,7 +13,16 @@
 
 <body>
     <header>
-        <!-- Your existing header content -->
+        <nav class="navbar" id="navbarId">
+
+        </nav>
+        <div class="kategori">
+            <div class="kategori-scroll">
+                <div class="categories" id="kategoriContainer">
+                    <!-- Kategori akan diisi melalui JavaScript -->                    
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -38,6 +47,8 @@
 
         </div>
     </main>
+    <script src="js/navbar.js"></script>
+    <script src="js/categories.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const urlParams = new URLSearchParams(window.location.search);
@@ -62,7 +73,7 @@
                                 <img src="${detailItem.gambar}" alt="Card-isi-detail Image 1">
                                 <div class="card-detail-content">
                                     <h5>${detailItem.datatime}</h5>
-                                    <h3>${detailItem.kategori}</h3>
+                                    <h3>kategori - ${detailItem.kategori}</h3>
                                     <p>${detailItem.deskripsi}</p>
                                 </div>
                             </div>

@@ -13,13 +13,25 @@
 
 <body>
     <header>
+        <nav class="navbar" id="navbarId">
 
+        </nav>
+        <div class="kategori">
+            <div class="kategori-scroll">
+                <div class="categories" id="kategoriContainer">
+                    <!-- Kategori akan diisi melalui JavaScript -->                    
+                </div>
+            </div>
+        </div>
     </header>
     <h3 class="label-kategori" id="kategoriLabel">Kategori</h3>
     <div class="container-list-kategori" id="listKategoriContainer">
         <!-- Kategori akan diisi melalui JavaScript -->
         <!-- Periksa js list-kategori -->
     </div>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/categories.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -60,7 +72,7 @@
                         titleElement.appendChild(titleLink);
 
                         let descElement = document.createElement('p');
-                        descElement.textContent = item.deskripsi;
+                        descElement.textContent = item.deskripsi.substring(0, 50);
 
                         // Menambahkan elemen ke dalam card-list-kategori
                         cardElement.appendChild(imgElement);

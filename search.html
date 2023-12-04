@@ -12,11 +12,23 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar" id="navbarId">
+
+        </nav>
+        <div class="kategori">
+            <div class="kategori-scroll">
+                <div class="categories" id="kategoriContainer">
+                    <!-- Kategori akan diisi melalui JavaScript -->                    
+                </div>
+            </div>
+        </div>
+    </header>
     <h3 class="label-search" id="search-label">Search - <span id="search-term"></span></h3>
     <div class="container-search" id="search-container">
         <!-- Hasil pencarian akan ditampilkan di sini -->
     </div>
-
+    <script src="js/navbar.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Mendapatkan elemen untuk menampilkan hasil pencarian
@@ -78,7 +90,7 @@
                     titleElement.appendChild(titleLink);
 
                     let descElement = document.createElement('p');
-                    descElement.textContent = item.deskripsi;
+                    descElement.textContent = item.deskripsi.substring(0, 50);
 
                     // Menambahkan elemen ke dalam card-search
                     cardElement.appendChild(imgElement);
@@ -92,38 +104,4 @@
         });
     </script>
 </body>
-
 </html>
-<!-- 
-    <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Card-search Layout</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-
-<body>
-    <header>
-
-    </header>
-    <h3 class="label-search">Kategori - (kata kunci yang dicari)</h3>
-
-    <div class="container-search" id="search-container">
-        <div class="card-search">
-            <img src="item dari gambar" alt=" ">
-            <h3><a href="#">title</a></h3>
-            <p>deskripsi</p>
-        </div>
-    </div>
-
-</body>
-
-</html>
-
- -->
