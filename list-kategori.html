@@ -67,7 +67,7 @@
 
                         let titleElement = document.createElement('h3');
                         let titleLink = document.createElement('a');
-                        titleLink.href = '#'; // Atur href sesuai kebutuhan
+                        titleLink.href = `detail.html?id=${encodeURIComponent(item.id)}">${item.title}`; // Atur href sesuai kebutuhan
                         titleLink.textContent = item.title;
                         titleElement.appendChild(titleLink);
 
