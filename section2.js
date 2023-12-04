@@ -20,7 +20,7 @@ fetch('database.json')
 
             const title = document.createElement('h5');
             const titleLink = document.createElement('a');
-            titleLink.href = `detail.html?title=${encodeURIComponent(item.title)}`;
+            titleLink.href = `detail.html?id=${encodeURIComponent(item.id)}`;
             titleLink.textContent = item.title;
 
             title.appendChild(titleLink);
@@ -50,14 +50,14 @@ fetch('database.json')
 
             const earthTitle = document.createElement('h3');
             const earthTitleLink = document.createElement('a');
-            earthTitleLink.href = `detail.html?title=${encodeURIComponent(item.title)}`;
+            earthTitleLink.href = `detail.html?id=${encodeURIComponent(item.id)}`;
             earthTitleLink.textContent = item.title;
 
             earthTitle.appendChild(earthTitleLink);
             earthContent.appendChild(earthTitle);
 
             const earthDescription = document.createElement('p');
-            earthDescription.textContent = item.deskripsi.substring(0, 4);
+            earthDescription.textContent = item.deskripsi.substring(0, 30);
 
             earthContent.appendChild(earthDescription);
 

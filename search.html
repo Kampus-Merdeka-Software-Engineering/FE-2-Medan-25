@@ -12,11 +12,7 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
-    <h3 class="label-search">Search Results</h3>
-
+    <h3 class="label-search" id="search-label">Search - <span id="search-term"></span></h3>
     <div class="container-search" id="search-container">
         <!-- Hasil pencarian akan ditampilkan di sini -->
     </div>
@@ -25,6 +21,8 @@
         document.addEventListener('DOMContentLoaded', function () {
             // Mendapatkan elemen untuk menampilkan hasil pencarian
             let searchContainer = document.getElementById('search-container');
+            let searchLabel = document.getElementById('search-label');
+            let searchTermSpan = document.getElementById('search-term');
 
             // Mendapatkan kata kunci pencarian dari URL
             let searchParams = new URLSearchParams(window.location.search);
@@ -32,6 +30,10 @@
 
             // Memeriksa apakah parameter pencarian ada
             if (searchTerm !== null) {
+                // Mengatur teks pada label dan elemen span berdasarkan kata kunci pencarian
+                searchLabel.textContent = `Search - ${searchTerm}`;
+                searchTermSpan.textContent = searchTerm;
+
                 // Mengambil data dari file JSON menggunakan fetch
                 fetch('/database.json')
                     .then(response => response.json())
@@ -45,7 +47,10 @@
                         // Menampilkan hasil pencarian di halaman web
                         displaySearchResults(searchResults, searchContainer);
                     })
-                    .catch(error => console.error('Error fetching data:', error));
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
+                        searchContainer.innerHTML = '<p>Error fetching data. Please try again later.</p>';
+                    });
             } else {
                 // Tampilkan pesan bahwa tidak ada kata kunci pencarian
                 searchContainer.innerHTML = '<p>No search term provided</p>';
@@ -68,7 +73,7 @@
 
                     let titleElement = document.createElement('h3');
                     let titleLink = document.createElement('a');
-                    titleLink.href = 'link/ke/halaman-detail.html'; // Atur href sesuai kebutuhan
+                    titleLink.href = 'link/ke/halaman-detail.html?id=' + item.id; // Adjust the href as needed
                     titleLink.textContent = item.title;
                     titleElement.appendChild(titleLink);
 

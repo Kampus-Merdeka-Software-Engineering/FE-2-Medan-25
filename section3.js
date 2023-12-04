@@ -55,7 +55,7 @@ function createCardElement(item, category, isHeader) {
     titleElement.appendChild(titleLinkElement);
 
     const descriptionElement = document.createElement("p");
-    descriptionElement.textContent = item.deskripsi;
+    descriptionElement.textContent = item.deskripsi.substring(0, 30);
 
     contentElement.appendChild(titleElement);
     contentElement.appendChild(descriptionElement);
