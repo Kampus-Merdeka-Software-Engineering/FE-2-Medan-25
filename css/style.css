@@ -148,38 +148,32 @@ body {
 /* CSS HEADER END */
 /* CSS CAROUSEL START */
 .header-container {
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+    padding: 60px;
 }
 
 .carousel-container {
-    width: 600px;
-    overflow: hidden;
+    grid-column: span 1;
+    grid-row: span 2;
     position: relative;
-}
-
-.carousel-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+    margin-bottom: 10px;
 }
 
 .slide {
     position: relative;
-    flex: 0 0 100%;
-    box-sizing: border-box;
+    width: 100%;
+    height: 410px;
+    /* Ganti nilai sesuai kebutuhan, bisa menggunakan persentase atau nilai lainnya */
 }
 
 .slide img {
     width: 100%;
-    height: auto;
-    max-width: 100%;
-    position: relative;
+    height: 100%;
     object-fit: cover;
+    /* Agar gambar diatur ulang untuk mengisi kontainer sesuai tinggi yang diatur */
 }
 
 .dark-overlay {
@@ -193,147 +187,112 @@ body {
 
 .slide-content {
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #fff;
     text-align: center;
-    color: #fff;
-    width: 100%;
-    z-index: 1;
-    padding: 10px;
 }
 
-.slide h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
-    color: #fff;
+.slide-content a {
     text-decoration: none;
-}
-
-.slide h2 a {
     color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
 }
 
-.slide h2 a:hover {
-    color: #ffd700;
-}
-
-.slide blockquote {
-    font-size: 16px;
-}
-
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
+/* Card Header Container Styles */
 .card-header-container {
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: 10px;
 }
 
 .card-header {
-    width: 170px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding-top: 70px;
-    box-sizing: border-box;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+    display: flex;
+    background-color: #f1f1f1;
     position: relative;
     overflow: hidden;
+    height: 200px;
+    /* Ganti nilai sesuai kebutuhan */
 }
+
 
 .card-header img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.card-header-overlay {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.card-header-text {
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    padding: 16px;
-    padding-left: 5px;
-    position: relative;
-    z-index: 1;
 }
 
-
-.card-header h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
+.card-header-content {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
 
-.card-header h3 a {
+.card-header-content a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
-.card-header p {
-    font-size: 14px;
-}
-
-@media screen and (max-width: 950px) {
+/* Responsive Styles */
+@media (max-width: 768px) {
     .header-container {
-        margin-top: 0;
-        margin-left: 0;
+        grid-template-columns: 1fr;
+        /* Single column layout on small screens */
+        padding: 0;
+    }
+
+    .carousel-container {
+        margin-bottom: 10px;
+    }
+
+
+    /* Mengatur margin pada elemen h2 dan h3 pada layar kecil */
+    .slide-content h2,
+    .card-header-content h3 {
+        margin: 0;
+    }
+
+    .slide {
+        height: 250px;
     }
 
     .card-header-container {
-        width: 100%;
+        grid-template-columns: 1fr;
+        /* Single column layout for cards on small screens */
     }
 
     .card-header {
-        width: 100%;
-        margin-right: 0;
-        color: black;
-        padding: 5px;
+        height: 100px;
+        margin: 5px;
     }
-
-    .card-header-text {
-        background: none;
-        padding: 20px;
-        padding-left: 20px;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-    }
-
-    .card-header h3 a {
-        color: rgb(0, 0, 0);
-    }
-
+    .card-header-overlay {
+    display: none;
+}
 
     .card-header img {
         display: none;
     }
 
-    .carousel-container {
-        width: 100%;
-        margin-right: 0;
+    .card-header-content {
+        top: 50%;
+        left: 40%;    
+        color: #000000;            
     }
+    .card-header-content a {
+    color: #000000;
+}
 }
 
 /* CSS CAROUSEL END */
@@ -953,6 +912,7 @@ footer li {
 /* CSS ABOUT START */
 .h1-about {
     text-align: center;
+    margin: 10px;
     padding: 20px 0;
     background-color: #f0f0f0;
 }

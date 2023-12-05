@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
     try {
-        const response = await fetch("database.json");
+        const response = await fetch("https://kind-plum-wasp-wrap.cyclic.app/artikel");
         const data = await response.json();
 
         // Menampilkan data untuk kategori "Hiburan"

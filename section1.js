@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             return response.json();
         })
+    
         .then(data => {
             const politicData = data.data.filter(item => item.kategori === 'Politik');
             const sportData = data.data.filter(item => item.kategori === 'Olahraga');

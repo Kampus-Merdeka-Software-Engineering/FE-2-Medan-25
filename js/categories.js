@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let kategoriContainer = document.getElementById('kategoriContainer');
 
     // Mengambil data dari file JSON menggunakan fetch
-    fetch('/database.json')
+    fetch('https://kind-plum-wasp-wrap.cyclic.app/artikel')
         .then(response => response.json())
         .then(data => {
             // Mendapatkan kategori unik dari data

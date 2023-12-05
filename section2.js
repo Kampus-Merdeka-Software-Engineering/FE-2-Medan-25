@@ -1,9 +1,9 @@
 // Fetch data from API
-fetch('database.json')
+fetch('https://kind-plum-wasp-wrap.cyclic.app/artikel')
     .then(response => response.json())
     .then(data => {
         // Rels section
-        const relsData = data.data.filter(item => item.kategori === 'Rels');
+        const relsData = data.data.filter(item => item.kategori === 'Reels');
         const relsContainer = document.getElementById('rels-container');
 
         relsData.forEach(item => {
@@ -20,7 +20,7 @@ fetch('database.json')
 
             const title = document.createElement('h5');
             const titleLink = document.createElement('a');
-            titleLink.href = `detail.html?id=${encodeURIComponent(item.id)}`;
+            titleLink.href = item.deskripsi;
             titleLink.textContent = item.title;
 
             title.appendChild(titleLink);
