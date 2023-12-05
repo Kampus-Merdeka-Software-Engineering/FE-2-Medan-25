@@ -996,7 +996,7 @@ footer li {
 }
 
 .isi-detail {
-    max-width: 100%;
+    width: 100%;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -1004,6 +1004,7 @@ footer li {
 }
 
 .judul-detail {
+    width: 800px;
     margin-top: 20px;
     padding-left: 10px;
 }
