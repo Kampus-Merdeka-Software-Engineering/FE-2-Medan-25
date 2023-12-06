@@ -1,84 +1,58 @@
-let currentIndex = 0;
-const totalSlides = document.querySelectorAll('.slide').length;
-const carouselWrapper = document.querySelector('.carousel-wrapper');
-let slideWidth = document.querySelector('.slide').clientWidth;
-
-function updateCarousel() {
-  slideWidth = document.querySelector('.slide').clientWidth;
-  carouselWrapper.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
-}
-
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % totalSlides;
-  updateCarousel();
-}
-
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-  updateCarousel();
-}
-
-window.addEventListener('resize', function () {
-  slideWidth = document.querySelector('.slide').clientWidth;
-  currentIndex = 0; // Atur ulang indeks saat layar diubah ukurannya
-  updateCarousel();
-});
-
 document.addEventListener('DOMContentLoaded', function () {
-  // Panggil fungsi untuk mengisi carousel
-  fillCarousel();
+  // Fungsi untuk melakukan fetch data dari JSON
+  function fetchData() {
+      fetch('https://kind-plum-wasp-wrap.cyclic.app/artikel')
+          .then(response => response.json())
+          .then(data => displayData(data.data))
+          .catch(error => console.error('Error fetching data:', error));
+  }
 
-  // Setelah mengisi carousel, Anda dapat terus menggunakan fungsi nextSlide dan prevSlide seperti sebelumnya.
+  // Fungsi untuk menampilkan data di HTML
+  function displayData(data) {
+      // Filter data berdasarkan kategori 'Populer'
+      const filteredData = data.filter(item => item.kategori === 'Populer');
+
+      // Tampilkan data di carousel
+      document.getElementById('carousel-title').textContent = filteredData[0].title;
+      document.getElementById('carousel-description').textContent = filteredData[0].deskripsi.substring(0, 100);
+      document.getElementById('carousel-image').src = filteredData[0].gambar;
+
+      // Tampilkan data di card-header-container
+      const cardHeaderContainer = document.getElementById('card-header-container');
+      filteredData.slice(1, 5).forEach(item => {
+          const cardHeader = document.createElement('div');
+          cardHeader.classList.add('card-header');
+
+          const cardHeaderOverlay = document.createElement('div');
+          cardHeaderOverlay.classList.add('card-header-overlay');
+
+          const cardHeaderContent = document.createElement('div');
+          cardHeaderContent.classList.add('card-header-content');
+
+          const cardTitle = document.createElement('h3');
+          const titleLink = document.createElement('a');
+          titleLink.href = '#';
+          titleLink.textContent = item.title.substring(0, 40);
+          cardTitle.appendChild(titleLink);
+
+          const cardDescription = document.createElement('p');
+          cardDescription.textContent = item.deskripsi.substring(0, 70);
+
+          cardHeaderContent.appendChild(cardTitle);
+          cardHeaderContent.appendChild(cardDescription);
+
+          const cardImage = document.createElement('img');
+          cardImage.src = item.gambar;
+          cardImage.alt = '';
+
+          cardHeader.appendChild(cardHeaderOverlay);
+          cardHeader.appendChild(cardHeaderContent);
+          cardHeader.appendChild(cardImage);
+
+          cardHeaderContainer.appendChild(cardHeader);
+      });
+  }
+
+  // Panggil fungsi fetchData untuk mendapatkan dan menampilkan data
+  fetchData();
 });
-
-setInterval(nextSlide, 3000);
-
-// Fungsi untuk mengisi carousel dari JSON
-function fillCarousel() {
-  // Gunakan fetch untuk mendapatkan data JSON
-  fetch('/database.json') // Ganti 'URL_JSON_ANDA' dengan URL yang benar
-    .then(response => response.json())
-    .then(jsonData => {
-      // Ambil data dari JSON
-      const data = jsonData.data;
-
-      // Loop melalui setiap item dalam data
-      for (let i = 0; i < data.length; i++) {
-        const item = data[i];
-
-        // Buat elemen slide
-        const slide = document.createElement('div');
-        slide.classList.add('slide');
-
-        // Buat elemen gambar
-        const img = document.createElement('img');
-        img.src = item.gambar;
-        img.alt = `Slide ${i + 1}`;
-
-        // Buat elemen dark-overlay
-        const darkOverlay = document.createElement('div');
-        darkOverlay.classList.add('dark-overlay');
-
-        // Buat elemen slide-content
-        const slideContent = document.createElement('div');
-        slideContent.classList.add('slide-content');
-
-        // Isi elemen slide-content dengan data dari JSON
-        slideContent.innerHTML = `
-          <h2><a href="#">${item.title}</a></h2>
-          <blockquote>${item.deskripsi}</blockquote>
-        `;
-
-        // Tambahkan elemen-gambar, dark-overlay, dan slide-content ke dalam elemen slide
-        slide.appendChild(img);
-        slide.appendChild(darkOverlay);
-        slide.appendChild(slideContent);
-
-        // Tambahkan elemen slide ke dalam carousel
-        carouselWrapper.appendChild(slide);
-      }
-    })
-    .catch(error => {
-      console.error('Error fetching JSON:', error);
-    });
-}

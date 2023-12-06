@@ -28,49 +28,18 @@
         <div class="carousel-container">
             <div class="carousel-wrapper">
                 <div class="slide">
-                    <img src="asset/logo.jpeg" alt="Slide 1">
+                    <img id="carousel-image" src="" alt="Slide 1">
                     <div class="dark-overlay"></div>
                     <div class="slide-content">
-                        <h2><a href="#">title</a></h2>
-                        <blockquote>deskripsi</blockquote>
+                        <h2><a id="carousel-title" href="#"></a></h2>
+                        <blockquote id="carousel-description"></blockquote>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card-header-container">
-            <div class="card-header">
-                <div class="card-header-overlay"></div>
-                <div class="card-header-content">
-                    <h3><a href="#">Card kotak</a></h3>
-                    <p>Content for Card-header 1 goes here.</p>
-                </div>
-                <img src="asset/logo.jpeg" alt="">
-            </div>
-            <div class="card-header">
-                <div class="card-header-overlay"></div>
-                <div class="card-header-content">
-                    <h3><a href="#">Card kotak</a></h3>
-                    <p>Content for Card-header 2 goes here.</p>
-                </div>
-                <img src="asset/logo.jpeg" alt="">
-            </div>
-            <div class="card-header">
-                <div class="card-header-overlay"></div>
-                <div class="card-header-content">
-                    <h3><a href="#">Card kotak</a></h3>
-                    <p>Content for Card-header 3 goes here.</p>
-                </div>
-                <img src="asset/logo.jpeg" alt="">
-            </div>
-            <div class="card-header">
-                <div class="card-header-overlay"></div>
-                <div class="card-header-content">
-                    <h3><a href="#">Card kotak</a></h3>
-                    <p>Content for Card-header 4 goes here.</p>
-                </div>
-                <img src="asset/logo.jpeg" alt="">
-            </div>
+        <div class="card-header-container" id="card-header-container">
+            <!-- Data akan ditampilkan di sini -->
         </div>
     </div>
     <!-- End Carousel -->
@@ -141,39 +110,44 @@
     </div>
     <!-- Content3 -->
     <!-- Footer -->
-    <footer>
-        <h2 style="margin-top: 20px;">CeplosNews</h2>
-        <div class="footer-row">
-            <div class="column">
-                <h3>Column 1</h3>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
-            </div>
-            <div class="column">
-                <h3>Column 2</h3>
-                <ul>
-                    <li>Item 4</li>
-                    <li>Item 5</li>
-                    <li>Item 6</li>
-                </ul>
-            </div>
-            <div class="column">
-                <h3>Column 3</h3>
-                <ul>
-                    <li>Item 7</li>
-                    <li>Item 8</li>
-                    <li>Item 9</li>
-                </ul>
-            </div>
+    <div class="footer-row">
+        <div class="column">
+          <div class="logo-footer">
+            <h1>CEPLOS NEWS</h1>
+          </div>
+          <div class="terms">
+            <p>
+              Website ini berisikan berita yang sedang viral dan terbaru, untuk
+              teman-teman jangan lupa untuk nyalakan notifikasi dan lonccengnya
+            </p>
+          </div>
         </div>
 
-        <p style="margin-top: 10px; text-align: center;">&copy;Copyright © CeplosNews</p>
+        <div class="column">
+          <h2>CONTACT US</h2>
+          <a href="#">EMAIL</a>
+          <a href="#">0813447587789</a>
+          <a href="#">INDONESI MEDAN</a>
+        </div>
+
+        <div class="column">
+          <h2>ABOUT US</h2>
+          <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+          <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+          <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+          <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+        </div>
+      </div>
+
+      <div class="box__copyright">
+        <hr />
+        <p>&copy;Copyright <b>CeplosNews</b></p>
+      </div>
     </footer>
+    <!-- Footer -->
 
     <script src="js/navbar.js"></script>
+    <script src="js/carousel.js"></script>
     <script src="js/categories.js"></script>
     <script src="section1.js"></script>
     <script src="section2.js"></script>

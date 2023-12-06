@@ -3,7 +3,7 @@
     "data": [
       {
         "id": 1,
-        "datatime": "2023-11-29 20:06:12",
+        "time": "2023-11-29 20:06:12",
         "title": "politik 1",
         "gambar": "https://i.dailymail.co.uk/i/pix/2011/03/11/article-1365318-0D925D90000005DC-780_964x593.jpg",
         "kategori": "Politik",
@@ -11,7 +11,7 @@
       },
       {
         "id": 2,
-        "datatime": "2023-11-29 21:30:45",
+        "time": "2023-11-29 21:30:45",
         "title": "politik 2",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Politik",
@@ -19,7 +19,7 @@
       },
       {
         "id": 3,
-        "datatime": "2023-11-29 22:45:30",
+        "time": "2023-11-29 22:45:30",
         "title": "politik 3",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Politik",
@@ -27,7 +27,7 @@
       },
       {
         "id": 4,
-        "datatime": "2023-11-30 09:45:00",
+        "time": "2023-11-30 09:45:00",
         "title": "olahraga 4",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Olahraga",
@@ -35,7 +35,7 @@
       },
       {
         "id": 5,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "olahraga 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Olahraga",
@@ -43,7 +43,7 @@
       },
       {
         "id": 6,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "olahraga 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Olahraga",
@@ -51,7 +51,7 @@
       },
       {
         "id": 7,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "popoloar 5",
         "gambar": "https://source.unsplash.com/100x100",
         "kategori": "Popular",
@@ -59,7 +59,7 @@
       },
       {
         "id": 8,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "popoloar 5",
         "gambar": "https://source.unsplash.com/100x100",
         "kategori": "Popular",
@@ -67,7 +67,7 @@
       },
       {
         "id": 9,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "popoloar 5",
         "gambar": "https://source.unsplash.com/100x100",
         "kategori": "Popular",
@@ -75,7 +75,7 @@
       },
       {
         "id": 10,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "popoloar 5",
         "gambar": "https://source.unsplash.com/100x100",
         "kategori": "Popular",
@@ -83,7 +83,7 @@
       },
       {
         "id": 11,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "popoloar 5",
         "gambar": "https://source.unsplash.com/100x100",
         "kategori": "Popular",
@@ -91,7 +91,7 @@
       },
       {
         "id": 12,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "popoloar 5",
         "gambar": "https://source.unsplash.com/100x100",
         "kategori": "Popular",
@@ -99,7 +99,7 @@
       },
       {
         "id": 13,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "Rels 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Rels",
@@ -107,7 +107,7 @@
       },
       {
         "id": 14,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "Rels 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Rels",
@@ -115,7 +115,7 @@
       },
       {
         "id": 15,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "Rels 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Rels",
@@ -123,7 +123,7 @@
       },
       {
         "id": 16,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "earth 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Earth",
@@ -131,7 +131,7 @@
       },
       {
         "id": 17,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "earth 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Earth",
@@ -139,7 +139,7 @@
       },
       {
         "id": 18,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "earth 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Earth",
@@ -147,7 +147,7 @@
       },
       {
         "id": 19,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "earth 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Earth",
@@ -155,7 +155,7 @@
       },
       {
         "id": 20,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "hibbuu 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Hiburan",
@@ -163,7 +163,7 @@
       },
       {
         "id": 21,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "hibbuu 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Hiburan",
@@ -171,7 +171,7 @@
       },
       {
         "id": 22,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "hibbuu 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Hiburan",
@@ -179,7 +179,7 @@
       },
       {
         "id": 23,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "hibbuu 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Hiburan",
@@ -187,7 +187,7 @@
       },
       {
         "id": 24,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "hibbuu 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Hiburan",
@@ -195,7 +195,7 @@
       },
       {
         "id": 25,
-        "datatime": "2023-11-30 11:00:45",
+        "time": "2023-11-30 11:00:45",
         "title": "hibbuu 5",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Hiburan",
@@ -203,7 +203,7 @@
       },
       {
         "id": 26,
-        "datatime": "2023-11-30 12:15:30",
+        "time": "2023-11-30 12:15:30",
         "title": "head ekom 6",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Ekonomi",
@@ -211,7 +211,7 @@
       },
       {
         "id": 27,
-        "datatime": "2023-11-30 12:15:30",
+        "time": "2023-11-30 12:15:30",
         "title": "ekonomi 6",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Ekonomi",
@@ -219,7 +219,7 @@
       },
       {
         "id": 28,
-        "datatime": "2023-11-30 12:15:30",
+        "time": "2023-11-30 12:15:30",
         "title": "ekonomi 6",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Ekonomi",
@@ -227,7 +227,7 @@
       },
       {
         "id": 29,
-        "datatime": "2023-11-30 12:15:30",
+        "time": "2023-11-30 12:15:30",
         "title": "ekonomi 6",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Ekonomi",
@@ -235,7 +235,7 @@
       },
       {
         "id": 30,
-        "datatime": "2023-11-30 12:15:30",
+        "time": "2023-11-30 12:15:30",
         "title": "kesehatan 6",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Kesehatan",
@@ -243,7 +243,7 @@
       },
       {
         "id": 31,
-        "datatime": "2023-11-30 12:15:30",
+        "time": "2023-11-30 12:15:30",
         "title": "teknologi 6",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Teknologi",
@@ -251,7 +251,7 @@
       },
       {
         "id": 32,
-        "datatime": "2023-11-30 12:15:30",
+        "time": "2023-11-30 12:15:30",
         "title": "Berita 6",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Teknologi",
@@ -259,7 +259,7 @@
       },
       {
         "id": 33,
-        "datatime": "2023-11-30 12:15:30",
+        "time": "2023-11-30 12:15:30",
         "title": "Berita 6",
         "gambar": "https://source.unsplash.com/500x400",
         "kategori": "Kesehatan",

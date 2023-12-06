@@ -159,7 +159,6 @@ body {
     grid-column: span 1;
     grid-row: span 2;
     position: relative;
-    margin-bottom: 10px;
 }
 
 .slide {
@@ -187,9 +186,8 @@ body {
 
 .slide-content {
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 2%;
     color: #fff;
     text-align: center;
 }
@@ -234,9 +232,8 @@ body {
 
 .card-header-content {
     position: absolute;
-    top: 70%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 3%;
     color: #fff;
 }
 
@@ -257,6 +254,22 @@ body {
         margin-bottom: 10px;
     }
 
+    .slide-content {
+        top: 30%;
+        left: 2%;
+        /* Memusatkan konten secara horizontal */
+        text-align: center;
+    }
+
+    .card-header-content {
+        top: 20%;
+        left: 40%;
+        /* Menyesuaikan margin kiri untuk memusatkan konten */
+        transform: translateX(-50%);
+        /* Memusatkan konten secara horizontal */
+        color: #000000;
+    }
+
 
     /* Mengatur margin pada elemen h2 dan h3 pada layar kecil */
     .slide-content h2,
@@ -275,24 +288,22 @@ body {
 
     .card-header {
         height: 100px;
-        margin: 5px;
+        margin: 2px;
     }
+
     .card-header-overlay {
-    display: none;
-}
+        display: none;
+    }
 
     .card-header img {
         display: none;
     }
 
-    .card-header-content {
-        top: 50%;
-        left: 40%;    
-        color: #000000;            
-    }
+
+
     .card-header-content a {
-    color: #000000;
-}
+        color: #000000;
+    }
 }
 
 /* CSS CAROUSEL END */
@@ -861,38 +872,77 @@ body {
 
 /* CSS CONTENT 3 END */
 /* CSS FOOTER */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+.footer-row {
+    width: 100%;
 }
 
 .footer-row {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
 }
 
 .column {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
 }
 
-footer h3 {
-    color: #f1f1f1;
-    margin-top: 20px;
+.column .logo-footer {
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
     margin-bottom: 10px;
 }
 
-footer .column ul {
-    list-style-type: none;
-    padding: 0;
+.column.terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
 }
 
-footer li {
-    margin-bottom: 8px;
+.column h2 {
+    margin-bottom: 30px;
+    color: #a41111;
+    font-weight: 700;
+}
+
+.column a {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.column a:hover {
+    opacity: 0.8;
+    color: orange;
+}
+
+.column a .fab {
+    font-size: 20px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
 }
 
 @media (min-width: 600px) {
@@ -1119,174 +1169,177 @@ footer li {
 
 /*contact us*/
 .contactUs {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #ffffff;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
 }
 
 .container {
-  width: 800px;
-  max-width: 800px;
-  background: #ffffff;
-  padding: 25px 40px 10px 40px;
-  border-radius: 5px;
-  border-color: #025465e0;
-  box-shadow: 0 0 10px rgb(228, 223, 219);
+    width: 800px;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 25px 40px 10px 40px;
+    border-radius: 5px;
+    border-color: #025465e0;
+    box-shadow: 0 0 10px rgb(228, 223, 219);
 }
 
 .container .title {
-  font-size: 35px;
-  font-weight: 600;
-  text-align: center;
-  background-color: #df6819e0;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #df6819e0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .container form {
-  padding: 30px 0 0 0;
+    padding: 30px 0 0 0;
 }
 
 .container form .form-row {
-  display: flex;
-  margin: 32px 0;
+    display: flex;
+    margin: 32px 0;
 }
 
 .container form .form-row .input-data {
-  width: 100%;
-  height: 40px;
-  margin: 0 20px;
-  position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
 }
 
 .container form .form-row .input-data.textarea {
-  height: 70px;
+    height: 70px;
 }
 
 .container form .form-row .input-data input,
 .container form .form-row .input-data textarea {
-  display: block;
-  height: 100%;
-  width: 100%;
-  border: none;
-  font-size: 17px;
-  border-bottom: 2px solid #025465e0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid #025465e0;
 }
 
 .container form .form-row .input-data textarea {
-  resize: none;
-  padding-top: 10px;
+    resize: none;
+    padding-top: 10px;
 }
 
 .container form .form-row .input-data label {
-  position: absolute;
-  pointer-events: none;
-  bottom: 10px;
-  font-size: 16px;
-  transition: all 0.3s ease;
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
-.container form .form-row .input-data input:focus ~ label,
-.container form .form-row .input-data textarea:focus ~ label,
-.container form .form-row .input-data input:valid ~ label,
-.container form .form-row .input-data textarea:valid ~ label {
-  transform: translateY(-30px);
-  font-size: 14px;
-  color: #df6819e0;
+.container form .form-row .input-data input:focus~label,
+.container form .form-row .input-data textarea:focus~label,
+.container form .form-row .input-data input:valid~label,
+.container form .form-row .input-data textarea:valid~label {
+    transform: translateY(-30px);
+    font-size: 14px;
+    color: #df6819e0;
 }
 
 .container form .form-row .input-data.textarea label {
-  width: 100%;
-  bottom: 40px;
-  background: #ffffff;
+    width: 100%;
+    bottom: 40px;
+    background: #ffffff;
 }
 
 .container form .form-row .input-data .underline {
-  position: absolute;
-  bottom: 0;
-  height: 2px;
-  width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
 }
 
 .container form .form-row .input-data .underline::before {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 100%;
-  background: #025465e0;
-  transform-origin: center;
-  transition: all 0.3s ease;
-  transform: scaleX(0);
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #025465e0;
+    transform-origin: center;
+    transition: all 0.3s ease;
+    transform: scaleX(0);
 }
 
-.container form .form-row .input-data input:focus ~ .underline::before,
-.container form .form-row .input-data textarea:focus ~ .underline::before,
-.container form .form-row .input-data input:valid ~ .underline::before,
-.container form .form-row .input-data textarea:valid ~ .underline::before {
-  transform: scale(1);
+.container form .form-row .input-data input:focus~.underline::before,
+.container form .form-row .input-data textarea:focus~.underline::before,
+.container form .form-row .input-data input:valid~.underline::before,
+.container form .form-row .input-data textarea:valid~.underline::before {
+    transform: scale(1);
 }
 
 .container form .form-row.submit-btn {
-  justify-content: center; /* Memposisikan tombol di tengah */
-  margin-top: 32px;
+    justify-content: center;
+    /* Memposisikan tombol di tengah */
+    margin-top: 32px;
 }
 
 .container form .form-row.submit-btn .input-data {
-  overflow: hidden;
-  height: 45px !important;
-  width: 25% !important;
-  border-radius: 25px; /* Menambahkan sudut melengkung yang sama */
+    overflow: hidden;
+    height: 45px !important;
+    width: 25% !important;
+    border-radius: 25px;
+    /* Menambahkan sudut melengkung yang sama */
 }
 
 .container form .form-row.submit-btn .input-data .inner {
-  height: 100%;
-  width: 300%;
-  background: #f26727;
-  position: absolute;
+    height: 100%;
+    width: 300%;
+    background: #f26727;
+    position: absolute;
 }
 
 .container form .form-row.submit-btn .input-data:hover .inner {
-  left: 0;
+    left: 0;
 }
 
 .container form .form-row.submit-btn .input-data input {
-  z-index: 2;
-  position: relative;
-  background: none;
-  color: #ffffff;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  font-size: 17px;
+    z-index: 2;
+    position: relative;
+    background: none;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 17px;
 }
 
 @media (max-width: 1024px) {
     .container .title {
-      font-size: 20px;
+        font-size: 20px;
     }
-  }
+}
 
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
     .container .title {
-      font-size: 25px;
+        font-size: 25px;
     }
-  
+
     .container form .form-row {
-      flex-direction: column;
+        flex-direction: column;
     }
-    
+
     .container form .form-row .input-data {
-      flex: 100%;
-      margin: 15px 0;
+        flex: 100%;
+        margin: 15px 0;
     }
-  
+
     .container form .form-row.submit-btn .input-data {
-      width: 50% !important;
+        width: 50% !important;
     }
-  }
+}
+
 /* contact end */
