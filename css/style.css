@@ -495,7 +495,7 @@ body {
     margin: 20px auto;
     display: flexbox;
     justify-content: space-around;
-    background-image: url(asset/rels.jpg);
+    background-image: url(../asset/rels.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
