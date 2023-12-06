@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // navbar
 document.getElementById('navbarId').innerHTML = `
-<a href="/" class="logo"><img src="asset/logo.jpeg"
+<a href="index.html" class="logo"><img src="asset/logo.jpeg"
 style="width: 40px; border-radius: 50%; margin-right: 5px;" alt=""><span>Ceplosnews</span></a>
 <ul class="nav-links">
-<li><a href="/">Home</a></li>
+<li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>                
 <li><a href="contact.html">Contact</a></li>
 <!-- Formulir Pencarian -->
