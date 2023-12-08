@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbarId">
+
+        </nav>
+        <div class="kategori">
+            <div class="kategori-scroll">
+                <div class="categories" id="kategoriContainer">
+                    <!-- Kategori akan diisi melalui JavaScript -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Carousel -->
+    <div class="header-container">
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="slide">
+                    <img id="carousel-image" src="" alt="Slide 1">
+                    <div class="dark-overlay"></div>
+                    <div class="slide-content">
+                        <h2><a id="carousel-title" href="#"></a></h2>
+                        <blockquote id="carousel-description"></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-header-container" id="card-header-container">
+            <!-- Data akan ditampilkan di sini -->
+        </div>
+    </div>
+    <!-- End Carousel -->
+
+    <!-- Content 1 start -->
+
+    <div class="isicontent">
+        <div class="content1">
+            <h3 class="judul-kategori"><i class="fa-solid fa-circle" style="color: #ca2121;"></i> Politic</h3>
+            <hr>
+            <div class="politik" id="politik-container"></div>
+
+            <h3 class="judul-kategori"><i class="fa-solid fa-circle" style="color: #ca2121;"></i> Sport</h3>
+            <hr>
+            <div class="sport" id="sport-container"></div>
+        </div>
+
+        <div class="sidebar">
+            <h3 class="judul-popular"><i class="fa-solid fa-circle" style="color: #ffdb29;"></i> Terpopular</h3>
+            <div class="popular" id="popular-container"></div>
+        </div>
+    </div>
+
+    <!-- Content 1 end -->
+    <!-- Rels -->
+    <div class="rels-container">
+        <p class="kategori-rels">REELS</p>
+        <span class="span-rels">The most amazing post from the CeplosNews</span>
+        <div class="rels" id="rels-container">
+            <!-- data -->
+        </div>
+    </div>
+
+    <!-- Earth -->
+    <div class="content2">
+        <h3 class="judul-kategori"><i class="fa-solid fa-circle" style="color: #ca2121;"></i> Earth</h3>
+        <hr>
+        <div class="Earth-container" id="earth-container">
+            <!-- Data -->
+        </div>
+    </div>
+
+    <!-- Content3 start -->
+    <div class="content-bottom">
+        <!-- asidebar-hiburan -->
+        <div class="asidebar-hiburan">
+            <h3 class="judul-hiburan"><i class="fa-solid fa-circle" style="color: #ffdb29;"></i> Hiburan</h3>
+            <div class="hiburan" id="hiburan-container">
+                <!-- Data akan ditampilkan di sini melalui JavaScript -->
+            </div>
+        </div>
+
+        <!--end side bar  -->
+        <div class="content3">
+            <!-- Content3 -->
+            <h3 class="judul-ekonomi"><i class="fa-solid fa-circle" style="color: #ca2121;"></i> Ekonomi</h3>
+            <hr>
+            <!-- card header "Ekonomi" -->
+            <div class="card-head-ekonomi" id="header-ekonomi-container">
+                <!-- Data untuk card header "Ekonomi" akan ditampilkan di sini melalui JavaScript -->
+            </div>
+            <!-- card header "Ekonomi" -->
+
+            <div class="card-container-ekonomi" id="ekonomi-container">
+                <!-- Data untuk card "Ekonomi" akan ditampilkan di sini melalui JavaScript -->
+            </div>
+        </div>
+    </div>
+    <!-- Content3 -->
+    <!-- Footer -->
+    <div class="footer-row">
+        <div class="column">
+          <div class="logo-footer">
+            <h1>CEPLOS NEWS</h1>
+          </div>
+          <div class="terms">
+            <p>
+              Website ini berisikan berita yang sedang viral dan terbaru, untuk
+              teman-teman jangan lupa untuk nyalakan notifikasi dan lonccengnya
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2>CONTACT US</h2>
+          <a href="#">EMAIL</a>
+          <a href="#">0813447587789</a>
+          <a href="#">INDONESI MEDAN</a>
+        </div>
+
+        <div class="column">
+          <h2>ABOUT US</h2>
+          <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+          <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+          <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+          <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+        </div>
+      </div>
+
+      <div class="box__copyright">
+        <hr />
+        <p>&copy;Copyright <b>CeplosNews</b></p>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="js/navbar.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/categories.js"></script>
+    <script src="section1.js"></script>
+    <script src="section2.js"></script>
+    <script src="section3.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mendapatkan elemen formulir pencarian
+            let searchForm = document.getElementById('searchForm');
+
+            // Menambahkan event listener pada formulir pencarian
+            searchForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // Mencegah pengiriman formulir standar
+
+                // Mendapatkan nilai pencarian dari input
+                let searchInput = document.getElementById('searchInput');
+                let searchTerm = searchInput.value.toLowerCase();
+
+                // Mengalihkan pengguna ke halaman search.html dengan kata kunci pencarian sebagai parameter
+                window.location.href = 'search.html?q=' + encodeURIComponent(searchTerm);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

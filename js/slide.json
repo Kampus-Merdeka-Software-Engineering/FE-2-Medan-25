@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+          "time": "2023-11-29 20:06:12",
+          "title": "Berita 1",
+          "gambar": "https://source.unsplash.com/500x400",
+          "kategori": "slide",
+          "deskripsi": "Deskripsi untuk berita 1."
+        },
+        {
+          "time": "2023-11-29 21:30:45",
+          "title": "Berita 2",
+          "gambar": "https://source.unsplash.com/500x400",
+          "kategori": "slide",
+          "deskripsi": "Deskripsi untuk berita 2."
+        },
+        {
+          "time": "2023-11-29 22:45:30",
+          "title": "Berita 3",
+          "gambar": "https://source.unsplash.com/500x400",
+          "kategori": "slide",
+          "deskripsi": "Deskripsi untuk berita 3."
+        },
+        {
+          "time": "2023-11-30 09:45:00",
+          "title": "Berita 4",
+          "gambar": "https://source.unsplash.com/500x400",
+          "kategori": "slidecard",
+          "deskripsi": "Deskripsi untuk berita 4."
+        },
+        {
+          "time": "2023-11-30 11:00:45",
+          "title": "Berita 5",
+          "gambar": "https://source.unsplash.com/500x400",
+          "kategori": "slidecard",
+          "deskripsi": "Deskripsi untuk berita 5."
+        },
+        {
+          "time": "2023-11-30 11:00:45",
+          "title": "Berita 5",
+          "gambar": "https://source.unsplash.com/500x400",
+          "kategori": "slidecard",
+          "deskripsi": "Deskripsi untuk berita 5."
+        },
+        {
+          "time": "2023-11-30 11:00:45",
+          "title": "Berita 5",
+          "gambar": "https://source.unsplash.com/500x400",
+          "kategori": "slidecard",
+          "deskripsi": "Deskripsi untuk berita 5."
+        }
+    ]
+}

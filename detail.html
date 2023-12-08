@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Detail</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbarId">
+
+        </nav>
+        <div class="kategori">
+            <div class="kategori-scroll">
+                <div class="categories" id="kategoriContainer">
+                    <!-- Kategori akan diisi melalui JavaScript -->                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="detail-container">
+            <!-- Isi Content -->
+            <div class="detail-isi">
+                <!-- Content isi-detail -->
+                <h1 class="judul-detail" id="detailTitle">Loading...</h1>
+                <div class="isi-detail">
+                    
+
+                    <div class="card-detail">
+                        <img id="detailImage" alt="Card-isi-detail Image">
+                        <div class="card-detail-content">
+                            <h3 id="detailCategory">Category</h3>
+                            <h3 id="detailDatetime">Datetime</h3>
+                            <p id="detailDescription">Description</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/categories.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('id');
+
+            fetch('database.json')
+                .then(response => response.json())
+                .then(data => {
+                    const detailItem = data.data.find(item => item.id === parseInt(id));
+
+                    if (detailItem) {
+                        document.getElementById('detailTitle').textContent = detailItem.title;
+
+                        const detailImage = document.getElementById('detailImage');
+                        detailImage.src = detailItem.gambar;
+                        detailImage.alt = `Card-isi-detail Image: ${detailItem.title}`;
+
+                        // Adding the additional detail elements
+                        const isiDetail = document.querySelector('.isi-detail');
+                        isiDetail.innerHTML = `
+                            <div class="card-detail">
+                                <img src="${detailItem.gambar}" alt="Card-isi-detail Image 1">
+                                <div class="card-detail-content">
+                                    <h5>${detailItem.time}</h5>
+                                    <h3>kategori - ${detailItem.kategori}</h3>
+                                    <p>${detailItem.deskripsi}</p>
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        console.error('Item not found');
+                    }
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        });
+    </script>
+</body>
+
+</html>
