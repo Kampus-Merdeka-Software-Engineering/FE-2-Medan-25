@@ -987,6 +987,13 @@ body {
 
 .column-about img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.column-about h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 600px) {
