@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Fungsi untuk melakukan fetch data dari JSON
   function fetchData() {
-      fetch('/database.json')
+      fetch('http://localhost:3000/artikel')
           .then(response => response.json())
           .then(data => displayData(data.data))
           .catch(error => console.error('Error fetching data:', error));

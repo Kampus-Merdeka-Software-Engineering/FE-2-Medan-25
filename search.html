@@ -47,7 +47,7 @@
                 searchTermSpan.textContent = searchTerm;
 
                 // Mengambil data dari file JSON menggunakan fetch
-                fetch('database.json')
+                fetch('http://localhost:3000/artikel')
                     .then(response => response.json())
                     .then(data => {
                         // Menyaring data berdasarkan judul atau deskripsi yang cocok dengan kata kunci pencarian

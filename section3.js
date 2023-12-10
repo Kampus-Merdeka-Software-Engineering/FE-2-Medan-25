@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
     try {
-        const response = await fetch("database.json");
+        const response = await fetch("http://localhost:3000/artikel");
         const data = await response.json();
 
         // Menampilkan data untuk kategori "Hiburan"

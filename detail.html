@@ -55,7 +55,7 @@
             const urlParams = new URLSearchParams(window.location.search);
             const id = urlParams.get('id');
 
-            fetch('database.json')
+            fetch('http://localhost:3000/artikel')
                 .then(response => response.json())
                 .then(data => {
                     const detailItem = data.data.find(item => item.id === parseInt(id));

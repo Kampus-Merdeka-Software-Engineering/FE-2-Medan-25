@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let kategoriContainer = document.getElementById('kategoriContainer');
 
     // Mengambil data dari file JSON menggunakan fetch
-    fetch('/database.json')
+    fetch('http://localhost:3000/artikel')
         .then(response => response.json())
         .then(data => {
             // Mendapatkan kategori unik dari data

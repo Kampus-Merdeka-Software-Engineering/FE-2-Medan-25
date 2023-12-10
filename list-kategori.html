@@ -47,7 +47,7 @@
             let listKategoriContainer = document.getElementById('listKategoriContainer');
 
             // Mengambil data dari file JSON menggunakan fetch
-            fetch('database.json')
+            fetch('http://localhost:3000/artikel')
                 .then(response => response.json())
                 .then(data => {
                     // Menyaring data sesuai dengan kategori yang dipilih

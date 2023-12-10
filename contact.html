@@ -102,7 +102,7 @@
                     feedback: message
                 };
 
-                fetch('database.json', {
+                fetch('http://localhost:3000/feedback', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

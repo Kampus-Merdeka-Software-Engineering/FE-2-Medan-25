@@ -1,9 +1,9 @@
 // Fetch data from API
-fetch('database.json')
+fetch('http://localhost:3000/artikel')
     .then(response => response.json())
     .then(data => {
         // Rels section
-        const relsData = data.data.filter(item => item.kategori === 'Rels');
+        const relsData = data.data.filter(item => item.kategori === 'Reels');
         const relsContainer = document.getElementById('rels-container');
 
         relsData.forEach(item => {
@@ -58,6 +58,7 @@ fetch('database.json')
 
             const earthDescription = document.createElement('p');
             earthDescription.textContent = item.deskripsi.substring(0, 30);
+            
 
             earthContent.appendChild(earthDescription);
 
