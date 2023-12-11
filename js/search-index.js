@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let searchTerm = searchInput.value.toLowerCase();
 
         // Mengalihkan pengguna ke halaman search.html dengan kata kunci pencarian sebagai parameter
-        window.location.href = './search.html?q=' + encodeURIComponent(searchTerm);
+        window.location.href = '/search.html?q=' + encodeURIComponent(searchTerm);
     });
 });
 
