@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         searchTermSpan.textContent = searchTerm;
 
         // Mengambil data dari file JSON menggunakan fetch
-        fetch('http://localhost:3000/artikel')
+        fetch('https://be-2-medan-25-production.up.railway.app/artikel')
             .then(response => response.json())
             .then(data => {
                 // Menyaring data berdasarkan judul atau deskripsi yang cocok dengan kata kunci pencarian

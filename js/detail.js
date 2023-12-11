@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
 
-    fetch('http://localhost:3000/artikel')
+    fetch('https://be-2-medan-25-production.up.railway.app/artikel')
         .then(response => response.json())
         .then(data => {
             const detailItem = data.data.find(item => item.id === parseInt(id));

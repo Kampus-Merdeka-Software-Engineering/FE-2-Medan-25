@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
     try {
-        const response = await fetch("http://localhost:3000/artikel");
+        const response = await fetch("https://be-2-medan-25-production.up.railway.app/artikel");
         const data = await response.json();
 
         // Menampilkan data untuk kategori "Hiburan"

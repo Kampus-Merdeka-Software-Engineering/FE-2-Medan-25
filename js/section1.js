@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('http://localhost:3000/artikel')
+    fetch('https://be-2-medan-25-production.up.railway.app/artikel')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');

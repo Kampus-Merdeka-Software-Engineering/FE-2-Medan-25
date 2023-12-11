@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             feedback: message
         };
 
-        fetch('http://localhost:3000/feedback', {
+        fetch('https://be-2-medan-25-production.up.railway.app/feedback', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
