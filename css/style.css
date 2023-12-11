@@ -986,12 +986,6 @@ body {
     margin-bottom: 5px;
 }
 
-@media screen and (max-width: 600px) {
-    .column-about {
-        flex-basis: 100%;
-    }
-}
-
 /* Gaya untuk bagian konten */
 .content-about {
     max-width: 900px;
@@ -1034,6 +1028,14 @@ body {
 .content-about a:hover {
     text-decoration: underline;
 }
+
+
+@media screen and (max-width: 600px) {
+    .column-about {
+        flex-basis: 100%;
+    }
+}
+
 
 /* CSS ABOUT END */
 /* DETAIL START */
