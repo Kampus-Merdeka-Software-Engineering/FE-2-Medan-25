@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
           const cardTitle = document.createElement('h3');
           const titleLink = document.createElement('a');
-          titleLink.href = '#';
+          titleLink.href = 'detail.html?id=${encodeURIComponent(item.id)}';
           titleLink.textContent = item.title.substring(0, 40);
           cardTitle.appendChild(titleLink);
 
