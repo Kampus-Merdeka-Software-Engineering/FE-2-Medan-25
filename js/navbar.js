@@ -23,7 +23,7 @@ document.getElementById('navbarId').innerHTML = `
 <a href="https://kampus-merdeka-software-engineering.github.io/FE-2-Medan-25/" class="logo"><img src="asset/logo.jpeg"
 style="width: 40px; border-radius: 50%; margin-right: 5px;" alt=""><span>Ceplosnews</span></a>
 <ul class="nav-links">
-<li><a href="/">Home</a></li>
+<li><a href="https://kampus-merdeka-software-engineering.github.io/FE-2-Medan-25/">Home</a></li>
 <li><a href="about.html">About</a></li>                
 <li><a href="contact.html">Contact</a></li>
 <!-- Formulir Pencarian -->
