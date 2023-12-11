@@ -981,7 +981,7 @@ body {
     object-fit: cover;
 }
 
-.column-about h2{
+.column-about h2 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -994,7 +994,8 @@ body {
 }
 
 /* Gaya untuk judul subbagian */
-.content-about h2{
+.content-about h2,
+.content-about h3 {
     color: #3498db;            
 }
 
