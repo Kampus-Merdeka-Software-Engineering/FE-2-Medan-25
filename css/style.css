@@ -1052,7 +1052,8 @@ body {
     }
 
     .judul-detail {
-        width: 480px;
+        width: 470px;
+        padding: 20px;
     }
 
     .detail-isi {
