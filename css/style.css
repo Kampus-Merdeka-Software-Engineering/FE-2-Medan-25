@@ -981,62 +981,16 @@ body {
     object-fit: cover;
 }
 
-.column-about h2 {
+.column-about h2{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
-/* Gaya untuk bagian konten */
-.content-about {
-    max-width: 900px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-/* Gaya untuk judul subbagian */
-.content-about h2,
-.content-about h3 {
-    color: #3498db;            
-}
-
-/* Gaya untuk paragraf */
-.content-about p {
-    font-size: 18px;            
-    color: #555;        
-    margin-bottom: 15px;
-    margin-left: 5px;    
-    margin-right: 5px;
-}
-
-/* Gaya untuk daftar */
-.content-about ul {
-    list-style: none;
-    padding-left: 0;
-    color: #555;
-}
-
-.content-about li {
-    margin-bottom: 10px;
-}
-
-/* Gaya untuk tautan */
-.content-about a {
-    color: #e74c3c;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.content-about a:hover {
-    text-decoration: underline;
-}
-
 
 @media screen and (max-width: 600px) {
     .column-about {
         flex-basis: 100%;
     }
 }
-
 
 /* CSS ABOUT END */
 /* DETAIL START */
