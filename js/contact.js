@@ -38,14 +38,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Tambahkan logika atau tindakan lainnya setelah pengiriman berhasil                        
                 Swal.fire({
-                    title: "Terimakasih Atas Feedbacknya",                            
+                    title: "Terimakasih Atas Feedbacknya",
                     icon: "success"
                 });
             })
             .catch(error => {
                 console.error('Error:', error);
                 // Tambahkan logika atau tindakan lainnya untuk penanganan kesalahan                        
-                alert('Terjadi kesalahan: ' + error.message);
+                Swal.fire({
+                    icon: "error",
+                    title: "Gagal Terkirim",                             
+                });
             });
     });
 });
