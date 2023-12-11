@@ -1051,6 +1051,10 @@ body {
         display: block;
     }
 
+    .judul-detail {
+        width: 480px;
+    }
+
     .detail-isi {
         padding: 0;
     }
